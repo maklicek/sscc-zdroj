@@ -4,94 +4,278 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Edukace | SSCC — SolarSpace Carbon Cycle</title>
-  <meta name="description" content="Materiály, kurzy a otevřené zdroje pro školy, univerzity i veřejnost.">
+  <meta name="description" content="Edukace SSCC: přehled základů, materiálů pro studenty a partnery, odkazy, glosář a často kladené otázky." />
+  <meta name="keywords" content="SSCC, edukace, vzdělávání, NH3, amoniak, CO2, CCU, SBSP, rectenna, materiály, glosář" />
+  <meta name="theme-color" content="#0c1219" />
+
+  <!-- Open Graph / Twitter -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Edukace | SSCC" />
+  <meta property="og:description" content="Základy a podklady k SSCC pro studenty i partnery: NH₃, CCU a bezdrátová energie." />
+  <meta property="og:url" content="https://sscc.cz/edukace.html" />
+  <meta property="og:image" content="assets/img/og-cover.png" />
+  <meta name="twitter:card" content="summary_large_image" />
 
   <!-- Favicons -->
-  <link rel="icon" href="assets/favicons/favicon.ico">
-  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-16x16.png">
-  <link rel="apple-touch-icon" href="assets/favicons/apple-touch-icon.png">
+  <link rel="icon" href="assets/favicons/favicon.ico" />
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-16x16.png" />
+  <link rel="apple-touch-icon" href="assets/favicons/apple-touch-icon.png" />
+  <link rel="manifest" href="assets/favicons/site.webmanifest" />
 
-  <!-- CSS (jednou) -->
-  <link rel="preload" href="assets/style.css?v=1" as="style">
-  <link rel="stylesheet" href="assets/style.css?v=1">
+  <!-- Canonical & alternate -->
+  <link rel="canonical" href="https://sscc.cz/edukace.html" />
+  <link rel="alternate" hreflang="en" href="en/education.html" />
+  <link rel="alternate" hreflang="cs" href="edukace.html" />
+
+  <!-- CSS (centralizované) -->
+  <link rel="preload" href="assets/style.css?v=1" as="style" />
+  <link rel="stylesheet" href="assets/style.css?v=1" />
 </head>
-<body>
+<body class="site">
+  <a class="skip-link" href="#obsah">Přeskočit na obsah</a>
 
-  <!-- HLAVIČKA (sjednocená pro všechny stránky) -->
-  <header class="site-header" role="banner">
-    <div class="container header-inner">
-      <a href="index.html" class="brand" aria-label="SSCC – domů">
-        <img src="assets/logos/sscc-logo-round.png" alt="SSCC logo" class="logo">
-        <span class="brand-name">
-          <strong>SSCC</strong><br>
-          <small>SolarSpace Carbon Cycle</small>
-        </span>
+  <!-- Header -->
+  <header class="header" role="banner" aria-label="Hlavní hlavička">
+    <div class="container header__inner">
+      <a class="brand" href="index.html" aria-label="SSCC domů">
+        <img class="brand__logo" src="assets/logos/sscc-logo-oval.svg" alt="SSCC logo"
+             onerror="this.outerHTML='<span class=&quot;brand__text&quot;>SSCC</span>'" />
+        <span class="brand__tagline">SolarSpace Carbon Cycle</span>
       </a>
 
-      <nav class="main-nav site-nav" aria-label="Hlavní navigace">
+      <nav class="nav" role="navigation" aria-label="Hlavní navigace">
         <ul class="menu">
+          <li><a href="index.html">Domů</a></li>
           <li><a href="projekty.html">Projekty</a></li>
           <li><a href="napady.html">Nápady</a></li>
-          <li><a href="spoluprace.html">Spolupráce</a></li>
-          <li><a href="edukace.html">Edukace</a></li>
           <li><a href="konsorcium.html">Konsorcium</a></li>
-          <li class="lang"><a href="index-en.html" class="lang-btn">EN</a></li>
+          <li><a class="is-active" href="edukace.html" aria-current="page">Edukace</a></li>
         </ul>
       </nav>
+
+      <div class="lang">
+        <a class="lang__btn" href="en/education.html" hreflang="en" aria-label="Switch to English">EN</a>
+        <span class="lang__sep" aria-hidden="true">/</span>
+        <span class="lang__current" aria-current="true">CS</span>
+      </div>
     </div>
   </header>
 
-  <!-- OBSAH -->
-  <main class="container">
-    <section class="hero">
-      <div>
-        <h1 class="hero-title">Edukace</h1>
+  <!-- Hero -->
+  <section class="hero hero--compact" id="obsah">
+    <div class="container hero__inner">
+      <div class="hero__copy">
+        <h1>Edukace &amp; podklady</h1>
         <p class="lead">
-          SSCC je otevřená platforma — krok za krokem stavíme funkční řešení, nápady a piloty s jasnou ekonomikou.
+          Základní souvislosti a materiály k <strong>zelenému NH₃</strong>, <strong>CCU</strong> a
+          <strong>bezdrátové energii (rectenna)</strong> — pro studenty, partnery a veřejnost.
         </p>
+        <div class="hero__cta">
+          <a class="btn btn--primary" href="#materialy">Materiály</a>
+          <a class="btn btn--ghost" href="#glosar">Glosář</a>
+        </div>
       </div>
-      <div class="card hidden" id="hero-img" aria-hidden="true">
-        <!-- volitelné místo pro ilustraci -->
+      <div class="hero__art">
+        <img class="hero__image" src="assets/img/education-hero.png" alt="Ilustrace vzdělávacích materiálů" loading="eager" />
       </div>
-    </section>
-
-    <section class="card">
-      <h2>Materiály</h2>
-      <ul>
-        <li><a href="#">Obecný popis projektu (PDF) — bude doplněno</a></li>
-      </ul>
-    </section>
-  </main>
-
-  <!-- PATIČKA (sjednocená pro všechny stránky) -->
-  <footer class="site-footer" role="contentinfo">
-    <div class="container footer-inner">
-      <div class="footer-left">
-        © 2025 <strong>SolarSpace Carbon Cycle (SSCC)</strong> — Navrhl a spravuje SSCC Consortium · Powered by clean energy ✶
-      </div>
-      <nav class="footer-links" aria-label="Spodní navigace">
-        <a href="projekty.html">Projekty</a> ·
-        <a href="edukace.html">Edukace</a> ·
-        <a href="napady.html">Nápady</a> ·
-        <a href="konsorcium.html">Konsorcium</a> ·
-        <a href="spoluprace.html">Spolupráce</a>
-      </nav>
     </div>
-  </footer>
+  </section>
 
-  <!-- Aktivace aktivní položky v menu/patičce -->
-  <script>
-    (() => {
-      const here = (location.pathname.split('/').pop() || 'index.html').toLowerCase();
-      document.querySelectorAll('.main-nav a, .footer-links a').forEach(a => {
-        const href = (a.getAttribute('href') || '').toLowerCase();
-        if (href && href === here) {
-          a.classList.add('active');
-          a.setAttribute('aria-current', 'page');
-        }
-      });
-    })();
-  </script>
+  <!-- Rychlé odkazy -->
+  <section class="section">
+    <div class="container quicklinks__grid">
+      <a class="qlink" href="#materialy">Materiály</a>
+      <a class="qlink" href="#kurzy">Kurzové moduly</a>
+      <a class="qlink" href="#glosar">Glosář</a>
+      <a class="qlink" href="#faq">FAQ</a>
+    </div>
+  </section>
+
+  <!-- Materiály -->
+  <section class="section" id="materialy">
+    <div class="container">
+      <h2>Materiály ke stažení</h2>
+      <div class="cards cards--grid-3">
+        <article class="card">
+          <h3>SSCC — Úvodní prezentace</h3>
+          <p>Přehled konceptu, cíle a roadmapy.</p>
+          <p><a href="assets/docs/SSCC-uvod.pdf" download>Stáhnout PDF</a></p>
+        </article>
+        <article class="card">
+          <h3>Bezpečnostní minimum (BOZP)</h3>
+          <p>Základní zásady bezpečnosti a provozu.</p>
+          <p><a href="assets/docs/SSCC-BOZP-minimum.pdf" download>Stáhnout PDF</a></p>
+        </article>
+        <article class="card">
+          <h3>Metodiky měření</h3>
+          <p>Standardy měření pro NH₃, CCU a rectennu.</p>
+          <p><a href="assets/docs/SSCC-metodiky-mereni.pdf" download>Stáhnout PDF</a></p>
+        </article>
+      </div>
+
+      <div class="note">
+        Pozn.: Materiály se průběžně aktualizují; verze je uvedena přímo v dokumentech.
+      </div>
+    </div>
+  </section>
+
+  <!-- Kurzové moduly -->
+  <section class="section" id="kurzy">
+    <div class="container">
+      <h2>Kurzové moduly (pro univerzity a partnery)</h2>
+      <div class="accordion" role="tablist">
+        <details class="acc">
+          <summary class="acc__title">M1 — Zelený amoniak (NH₃) od základů</summary>
+          <div class="acc__content">
+            Chemie a energetika NH₃, výrobní postupy, skladování a bezpečnost. Krátké úlohy a doporučená literatura.
+          </div>
+        </details>
+        <details class="acc">
+          <summary class="acc__title">M2 — CCU: zachytávání a využití CO₂</summary>
+          <div class="acc__content">
+            Přehled technologií záchytu, regenerace sorbentů a integrace s NH₃ smyčkou; bilance a LCA.
+          </div>
+        </details>
+        <details class="acc">
+          <summary class="acc__title">M3 — Bezdrátová energie a rectenna</summary>
+          <div class="acc__content">
+            Základy RF, 2.45&nbsp;GHz rectenna, účinnost, EMC a bezpečnostní limity; laboratorní cvičení.
+          </div>
+        </details>
+        <details class="acc">
+          <summary class="acc__title">M4 — Systémová integrace &amp; bezpečnost</summary>
+          <div class="acc__content">
+            P&ID, řízení, HAZOP pre-study, standardy, měření a provoz pilotu; governance a reporting.
+          </div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- Glosář -->
+  <section class="section" id="glosar">
+    <div class="container">
+      <h2>Glosář pojmů</h2>
+      <div class="table-wrap" role="region" aria-label="Glosář" tabindex="0">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Zkratka/pojem</th>
+              <th>Význam</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>NH₃</td>
+              <td>Amoniak; nosič energie a surovina pro průmysl.</td>
+            </tr>
+            <tr>
+              <td>CCU</td>
+              <td>Carbon Capture &amp; Utilization — záchyt a využití CO₂.</td>
+            </tr>
+            <tr>
+              <td>SBSP</td>
+              <td>Space-Based Solar Power — solární energie ze satelitů.</td>
+            </tr>
+            <tr>
+              <td>Rectenna</td>
+              <td>Usměrňovací anténa převádějící RF na DC.</td>
+            </tr>
+            <tr>
+              <td>LCOA</td>
+              <td>Levelized Cost of Ammonia — nivelizované náklady NH₃.</td>
+            </tr>
+            <tr>
+              <td>HAZOP</td>
+              <td>Systematická analýza rizik procesu.</td>
+            </tr>
+            <tr>
+              <td>EMC</td>
+              <td>Elektromagnetická kompatibilita.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="note">
+        Tip: Pokud vám v glosáři chybí pojem, navrhněte doplnění přes formulář na stránce <a href="napady.html">Nápady</a>.
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section" id="faq">
+    <div class="container">
+      <h2>FAQ</h2>
+      <div class="accordion" role="tablist">
+        <details class="acc">
+          <summary class="acc__title">Je NH₃ bezpečný jako energetický nosič?</summary>
+          <div class="acc__content">
+            Při dodržení standardů a školení ano. Počítáme s detekcí úniků, ventilací, neutralizací a školením obsluhy.
+          </div>
+        </details>
+        <details class="acc">
+          <summary class="acc__title">Proč 2.45&nbsp;GHz u rectenny?</summary>
+          <div class="acc__content">
+            Geograficky dostupné, dobře prozkoumané a vhodné pro laboratorní ověření. Pro škálování se zvažují i jiné frekvence dle regulace.
+          </div>
+        </details>
+        <details class="acc">
+          <summary class="acc__title">Jaké jsou hlavní metriky úspěchu?</summary>
+          <div class="acc__content">
+            Účinnost (η), bezpečnostní incidenty = 0, LCOA, OPEX, replikovatelnost měření a dosažené TRL.
+          </div>
+        </details>
+        <details class="acc">
+          <summary class="acc__title">Kde najdu veřejné zdroje a literaturu?</summary>
+          <div class="acc__content">
+            Viz sekce „Materiály ke stažení“ výše; doplňující odkazy budou průběžně přidávány.
+          </div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section section--cta">
+    <div class="container cta">
+      <h2>Zapojte se do edukace</h2>
+      <p>Chcete hostovat studentské cvičení, přinést case study nebo pomoci s příručkami? Napište nám.</p>
+      <div class="hero__cta">
+        <a class="btn btn--primary" href="konsorcium.html">Konsorcium</a>
+        <a class="btn btn--ghost" href="napady.html">Navrhnout téma</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer" role="contentinfo">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <a class="brand brand--footer" href="index.html" aria-label="SSCC domů">
+          <img class="brand__logo" src="assets/logos/sscc-logo-round.svg" alt="SSCC logo"
+               onerror="this.outerHTML='<span class=&quot;brand__text&quot;>SSCC</span>'" />
+        </a>
+        <p class="footer__tag">© <span id="year">2025</span> SSCC — SolarSpace Carbon Cycle</p>
+      </div>
+      <nav class="footer__nav" aria-label="Footer navigace">
+        <ul class="menu menu--footer">
+          <li><a href="index.html">Domů</a></li>
+          <li><a href="projekty.html">Projekty</a></li>
+          <li><a href="napady.html">Nápady</a></li>
+          <li><a href="konsorcium.html">Konsorcium</a></li>
+          <li><a class="is-active" href="edukace.html" aria-current="page">Edukace</a></li>
+        </ul>
+      </nav>
+      <div class="footer__meta">
+        <a href="sitemap.xml" rel="sitemap">Sitemap</a>
+        <span class="dot">•</span>
+        <a href="robots.txt">robots.txt</a>
+      </div>
+    </div>
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </footer>
 </body>
 </html>

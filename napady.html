@@ -14,6 +14,7 @@
   <meta property="og:description" content="Otevřený inkubátor nápadů pro NH₃, CCU a bezdrátovou energii." />
   <meta property="og:url" content="https://sscc.cz/napady.html" />
   <meta property="og:image" content="assets/img/og-cover.png" />
+
   <meta name="twitter:card" content="summary_large_image" />
 
   <!-- Favicons -->
@@ -29,13 +30,12 @@
   <link rel="alternate" hreflang="cs" href="napady.html" />
 
   <!-- CSS (centralizované) -->
-  <link rel="preload" href="assets/style.css?v=1" as="style" />
-  <link rel="stylesheet" href="assets/style.css?v=1" />
+  <link rel="preload" href="assets/style/style.css?v=1" as="style" />
+  <link rel="stylesheet" href="assets/style/style.css?v=1" />
 </head>
 <body class="site">
   <a class="skip-link" href="#obsah">Přeskočit na obsah</a>
 
-  <!-- Header -->
   <header class="header" role="banner" aria-label="Hlavní hlavička">
     <div class="container header__inner">
       <a class="brand" href="index.html" aria-label="SSCC domů">
@@ -62,7 +62,6 @@
     </div>
   </header>
 
-  <!-- Hero -->
   <section class="hero hero--compact" id="obsah">
     <div class="container hero__inner">
       <div class="hero__copy">
@@ -82,7 +81,6 @@
     </div>
   </section>
 
-  <!-- Filtr / TOC (statický placeholder, logika může být později doplněna JS) -->
   <section class="section">
     <div class="container">
       <h2>Rychlá orientace</h2>
@@ -94,7 +92,6 @@
     </div>
   </section>
 
-  <!-- Inkubátor nápadů -->
   <section class="section" id="inkubator">
     <div class="container">
       <h2>Inkubátor nápadů</h2>
@@ -153,7 +150,6 @@
     </div>
   </section>
 
-  <!-- Priority -->
   <section class="section" id="priority">
     <div class="container">
       <h2>Aktuální priority</h2>
@@ -186,13 +182,11 @@
     </div>
   </section>
 
-  <!-- Přidat nápad -->
   <section class="section" id="pridat">
     <div class="container">
       <h2>Přidat nápad</h2>
       <p>Pošlete stručný popis, potenciál, rizika a navržený další krok. Preferujeme konkrétní a ověřitelné návrhy.</p>
 
-      <!-- Pokud používáte Formspree nebo jinou službu, stačí nahradit action a případně hidden pole. -->
       <form class="form" method="post" action="https://formspree.io/f/your-id">
         <div class="form__row">
           <label for="f-name">Jméno / Organizace</label>
@@ -237,7 +231,6 @@
     </div>
   </section>
 
-  <!-- Footer -->
   <footer class="footer" role="contentinfo">
     <div class="container footer__inner">
       <div class="footer__brand">
@@ -262,9 +255,7 @@
         <a href="robots.txt">robots.txt</a>
       </div>
     </div>
-    <script>
-      document.getElementById('year').textContent = new Date().getFullYear();
-    </script>
+    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
   </footer>
 </body>
 </html>

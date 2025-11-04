@@ -33,4 +33,278 @@
   <link rel="stylesheet" href="assets/style.css?v=1" />
 </head>
 <body class="site">
-  <a class="skip-link" hr
+  <a class="skip-link" href="#obsah">Přeskočit na obsah</a>
+
+  <!-- Header -->
+  <header class="header" role="banner" aria-label="Hlavní hlavička">
+    <div class="container header__inner">
+      <a class="brand" href="index.html" aria-label="SSCC domů">
+        <img class="brand__logo" src="assets/logos/sscc-logo-oval.svg" alt="SSCC logo" onerror="this.outerHTML='<span class=&quot;brand__text&quot;>SSCC</span>'" />
+        <span class="brand__tagline">SolarSpace Carbon Cycle</span>
+      </a>
+
+      <nav class="nav" role="navigation" aria-label="Hlavní navigace">
+        <ul class="menu">
+          <li><a href="index.html">Domů</a></li>
+          <li><a class="is-active" href="projekty.html" aria-current="page">Projekty</a></li>
+          <li><a href="napady.html">Nápady</a></li>
+          <li><a href="konsorcium.html">Konsorcium</a></li>
+          <li><a href="edukace.html">Edukace</a></li>
+        </ul>
+      </nav>
+
+      <div class="lang">
+        <a class="lang__btn" href="en/projects.html" hreflang="en" aria-label="Switch to English">EN</a>
+        <span class="lang__sep" aria-hidden="true">/</span>
+        <span class="lang__current" aria-current="true">CS</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero hero--compact" id="obsah">
+    <div class="container hero__inner">
+      <div class="hero__copy">
+        <h1>Projekty SSCC</h1>
+        <p class="lead">
+          Od <strong>demonstrátoru</strong> přes <strong>pilotní jednotku</strong> až po <strong>škálování 10&nbsp;MW</strong>. 
+          Integrovaný vývoj: NH₃ smyčka, CCU modul a bezdrátová energie (rectenna).
+        </p>
+        <div class="hero__cta">
+          <a class="btn btn--primary" href="#prehled">Přejít na přehled</a>
+          <a class="btn btn--ghost" href="konsorcium.html">Zapojit se do konsorcia</a>
+        </div>
+      </div>
+      <div class="hero__art">
+        <img class="hero__image" src="assets/img/cyclus-sscc.png" alt="Schéma cyklu SSCC" loading="eager" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Přehled projektových celků -->
+  <section class="section" id="prehled">
+    <div class="container">
+      <h2>Přehled projektových celků</h2>
+      <div class="cards cards--grid-3">
+        <article class="card">
+          <h3>Pilotní jednotka NH₃</h3>
+          <p>Decentralizovaná syntéza zeleného amoniaku: elektrolyzér, Haber-Bosch/alternativy, skladování a bezpečnost.</p>
+          <ul class="ticks">
+            <li>Modulární 50–250&nbsp;kW vstup</li>
+            <li>Ověření účinnosti a LCOA</li>
+            <li>Provozní a bezpečnostní manuál</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h3>CCU modul CO₂</h3>
+          <p>Záchyt a využití CO₂: sorbenty/MEAs, komprese, vazba na NH₃ a lokální průmysl.</p>
+          <ul class="ticks">
+            <li>Validace na reálných spalinách</li>
+            <li>Energetická bilance &amp; OPEX</li>
+            <li>Integrace do NH₃ smyčky</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h3>Rectenna &amp; bezdrátová energie</h3>
+          <p>2.45&nbsp;GHz přijímací pole inspirované SBSP. Simulace, laboratorní vzorky, bezpečnostní zóny.</p>
+          <ul class="ticks">
+            <li>Anténní panely a usměrnění</li>
+            <li>Řízení paprsku &amp; měření</li>
+            <li>Bezpečnostní rámec</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Milníky a roadmap -->
+  <section class="section">
+    <div class="container">
+      <h2>Milníky &amp; roadmap</h2>
+      <div class="table-wrap" role="region" aria-label="Tabulka milníků" tabindex="0">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Fáze</th>
+              <th>Hlavní výstupy</th>
+              <th>Odhad trvání</th>
+              <th>Stav</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Koncept &amp; konsorcium</td>
+              <td>Scope, partneři, bezpečnostní rámec, risk log</td>
+              <td>Q4&nbsp;2025&nbsp;–&nbsp;Q1&nbsp;2026</td>
+              <td><span class="badge">Probíhá</span></td>
+            </tr>
+            <tr>
+              <td>Studie &amp; simulace</td>
+              <td>Techno-ekonomika, CFD/EM, HAZOP pre-study</td>
+              <td>Q1&nbsp;–&nbsp;Q2&nbsp;2026</td>
+              <td><span class="badge badge--muted">Plán</span></td>
+            </tr>
+            <tr>
+              <td>Prototypy</td>
+              <td>Rectenna panely, NH₃ mikro-smyčka, CCU bench</td>
+              <td>Q2&nbsp;–&nbsp;Q3&nbsp;2026</td>
+              <td><span class="badge badge--muted">Plán</span></td>
+            </tr>
+            <tr>
+              <td>Demonstrátor</td>
+              <td>Integrovaný demo-stack, měření, bezpečnost</td>
+              <td>Q4&nbsp;2026</td>
+              <td><span class="badge badge--muted">Plán</span></td>
+            </tr>
+            <tr>
+              <td>Pilotní jednotka</td>
+              <td>250&nbsp;kW–1&nbsp;MW, provozní ověření, LCA</td>
+              <td>Q1&nbsp;–&nbsp;Q3&nbsp;2027</td>
+              <td><span class="badge badge--muted">Plán</span></td>
+            </tr>
+            <tr>
+              <td>Škálování</td>
+              <td>Moduly k&nbsp;10&nbsp;MW, standardizace, BOZP</td>
+              <td>Q4&nbsp;2027&nbsp;→</td>
+              <td><span class="badge badge--muted">Plán</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="note">
+        Pozn.: Časování je orientační a bude zpevnено po potvrzení partnerů a financování.
+      </div>
+    </div>
+  </section>
+
+  <!-- Balíčky práce (WP) -->
+  <section class="section">
+    <div class="container">
+      <h2>Balíčky práce (WP)</h2>
+      <div class="accordion" role="tablist">
+        <details class="acc">
+          <summary class="acc__title">WP1 — Řízení, bezpečnost a compliance</summary>
+          <div class="acc__content">
+            Governance, HAZOP, školení, risk &amp; quality management, legislativa, kyberbezpečnost.
+          </div>
+        </details>
+
+        <details class="acc">
+          <summary class="acc__title">WP2 — Studie a simulace</summary>
+          <div class="acc__content">
+            Techno-ekonomika, LCA/LCOA, CFD pro toky a výměníky, EM simulace rectenna polí.
+          </div>
+        </details>
+
+        <details class="acc">
+          <summary class="acc__title">WP3 — Rectenna a bezdrátová energie</summary>
+          <div class="acc__content">
+            Anténní prvky, usměrňovače, řízení paprsku, měření, EMC a bezpečnostní zóny.
+          </div>
+        </details>
+
+        <details class="acc">
+          <summary class="acc__title">WP4 — NH₃ smyčka</summary>
+          <div class="acc__content">
+            Elektrolyzér, kompresory, reaktorová část, skladování, měření &amp; regulace.
+          </div>
+        </details>
+
+        <details class="acc">
+          <summary class="acc__title">WP5 — CCU modul</summary>
+          <div class="acc__content">
+            Záchyt CO₂ (sorbenty/MEA), komprese, integrace do NH₃ smyčky a validace na provozu.
+          </div>
+        </details>
+
+        <details class="acc">
+          <summary class="acc__title">WP6 — Integrace a pilot</summary>
+          <div class="acc__content">
+            Demo-stack, FAT/SAT, bezpečnostní testy, trial provoz, reporting a standardizace.
+          </div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- Rozpočet & zdroje -->
+  <section class="section">
+    <div class="container">
+      <h2>Rozpočet &amp; zdroje (orientačně)</h2>
+      <div class="cards cards--grid-3">
+        <article class="card">
+          <h3>Celkem</h3>
+          <p>~6&nbsp;mil.&nbsp;EUR (grantové krytí do ~70&nbsp;%).</p>
+          <ul class="ticks">
+            <li>EU/Horizon synergie</li>
+            <li>Spolufinancování partnerů</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>CapEx</h3>
+          <p>Prototypy, pilotní zařízení, měření, bezpečnostní infrastruktura.</p>
+          <ul class="ticks">
+            <li>NH₃ a CCU moduly</li>
+            <li>Rectenna pole &amp; měřicí linka</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>OpEx</h3>
+          <p>Vývoj, provoz pilotu, energie, servis, compliance a školení.</p>
+          <ul class="ticks">
+            <li>Technický tým</li>
+            <li>Bezpečnost &amp; audit</li>
+          </ul>
+        </article>
+      </div>
+      <div class="note">
+        Podrobná rozpadová tabulka bude zveřejněna po finalizaci konsorcia.
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section section--cta">
+    <div class="container cta">
+      <h2>Přidejte se k vývoji</h2>
+      <p>Hledáme partnery z akademie i průmyslu: výpočty, prototypy, provoz pilotu a bezpečnost.</p>
+      <div class="hero__cta">
+        <a class="btn btn--primary" href="konsorcium.html">Konsorcium</a>
+        <a class="btn btn--ghost" href="edukace.html">Edukace</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer" role="contentinfo">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <a class="brand brand--footer" href="index.html" aria-label="SSCC domů">
+          <img class="brand__logo" src="assets/logos/sscc-logo-round.svg" alt="SSCC logo" onerror="this.outerHTML='<span class=&quot;brand__text&quot;>SSCC</span>'" />
+        </a>
+        <p class="footer__tag">© <span id="year">2025</span> SSCC — SolarSpace Carbon Cycle</p>
+      </div>
+      <nav class="footer__nav" aria-label="Footer navigace">
+        <ul class="menu menu--footer">
+          <li><a href="index.html">Domů</a></li>
+          <li><a class="is-active" href="projekty.html" aria-current="page">Projekty</a></li>
+          <li><a href="napady.html">Nápady</a></li>
+          <li><a href="konsorcium.html">Konsorcium</a></li>
+          <li><a href="edukace.html">Edukace</a></li>
+        </ul>
+      </nav>
+      <div class="footer__meta">
+        <a href="sitemap.xml" rel="sitemap">Sitemap</a>
+        <span class="dot">•</span>
+        <a href="robots.txt">robots.txt</a>
+      </div>
+    </div>
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </footer>
+</body>
+</html>

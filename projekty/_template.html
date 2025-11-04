@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>[Název projektu] | SSCC</title>
+  <meta name="description" content="[Jednověté shrnutí projektu]" />
+  <link rel="icon" href="../assets/favicons/favicon.ico" />
+  <link rel="preload" href="../assets/style/style.css?v=1" as="style" />
+  <link rel="stylesheet" href="../assets/style/style.css?v=1" />
+</head>
+<body class="site">
+  <a class="skip-link" href="#obsah">Přeskočit na obsah</a>
+
+  <header class="header">
+    <div class="container header__inner">
+      <a class="brand" href="../index.html"><img class="brand__logo" src="../assets/logos/sscc-logo-oval.svg" alt="SSCC" /><span class="brand__tagline">SolarSpace Carbon Cycle</span></a>
+      <nav class="nav">
+        <ul class="menu">
+          <li><a href="../index.html">Domů</a></li>
+          <li><a class="is-active" href="../projekty.html">Projekty</a></li>
+          <li><a href="../napady.html">Nápady</a></li>
+          <li><a href="../konsorcium.html">Konsorcium</a></li>
+          <li><a href="../edukace.html">Edukace</a></li>
+        </ul>
+      </nav>
+      <div class="lang"><span class="lang__current">CS</span></div>
+    </div>
+  </header>
+
+  <section class="hero hero--compact" id="obsah">
+    <div class="container hero__inner">
+      <div class="hero__copy">
+        <h1>[Název projektu]</h1>
+        <p class="lead">[Krátký úvod: cíl, TRL, očekávané výstupy]</p>
+        <div class="hero__cta">
+          <a class="btn btn--primary" href="#info">Detaily</a>
+          <a class="btn btn--ghost" href="../projekty.html">Zpět na projekty</a>
+        </div>
+      </div>
+      <div class="hero__art">
+        <img class="hero__image" src="../assets/img/og-cover.png" alt="[Ilustrace]" />
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="info">
+    <div class="container cards">
+      <article class="card">
+        <h3>Cíle &amp; metriky</h3>
+        <ul class="ticks">
+          <li>[Cíl 1]</li>
+          <li>[Cíl 2]</li>
+        </ul>
+      </article>
+      <article class="card">
+        <h3>Milníky</h3>
+        <ul class="ticks">
+          <li>[M1]</li>
+          <li>[M2]</li>
+        </ul>
+      </article>
+      <article class="card">
+        <h3>Rizika &amp; mitigace</h3>
+        <ul class="ticks">
+          <li>[R1]</li>
+          <li>[R2]</li>
+        </ul>
+      </article>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <a class="brand brand--footer" href="../index.html"><img class="brand__logo" src="../assets/logos/sscc-logo-round.svg" alt="SSCC" /></a>
+        <p class="footer__tag">© <span id="year">2025</span> SSCC — SolarSpace Carbon Cycle</p>
+      </div>
+      <nav class="footer__nav">
+        <ul class="menu menu--footer">
+          <li><a href="../index.html">Domů</a></li>
+          <li><a class="is-active" href="../projekty.html">Projekty</a></li>
+          <li><a href="../napady.html">Nápady</a></li>
+          <li><a href="../konsorcium.html">Konsorcium</a></li>
+          <li><a href="../edukace.html">Edukace</a></li>
+        </ul>
+      </nav>
+      <div class="footer__meta">
+        <a href="../sitemap.xml" rel="sitemap">Sitemap</a>
+        <span class="dot">•</span>
+        <a href="../robots.txt">robots.txt</a>
+      </div>
+    </div>
+    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  </footer>
+</body>
+</html>

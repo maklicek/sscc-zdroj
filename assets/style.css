@@ -378,3 +378,20 @@ input:focus,textarea:focus,select:focus{
   .hero{ min-height:40vh; padding:64px 0 40px; }
   .footer-inner{ flex-direction:column; align-items:flex-start; gap:8px; padding:14px 0; }
 }
+.footer-links a {
+  color: var(--text);
+  opacity: 0.8;
+  transition: opacity .2s ease;
+}
+.footer-links a:hover {
+  opacity: 1;
+  color: var(--accent);
+}
+.footer-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+  text-align: center;
+  padding: 20px 0;
+}

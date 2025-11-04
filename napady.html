@@ -3,112 +3,268 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>SSCC — SolarSpace Carbon Cycle</title>
-  <meta name="description" content="SolarSpace Carbon Cycle — inspirativní studnice nápadů a spoluprací.">
+  <title>Nápady | SSCC — SolarSpace Carbon Cycle</title>
+  <meta name="description" content="Nápady SSCC: otevřený inkubátor návrhů pro zelený NH₃, CCU a bezdrátovou energii. Přispějte a pomozte ověřit technické i ekonomické aspekty." />
+  <meta name="keywords" content="SSCC, nápady, inkubátor, green ammonia, CO2 CCU, rectenna, SBSP, inovace" />
+  <meta name="theme-color" content="#0c1219" />
+
+  <!-- Open Graph / Twitter -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Nápady | SSCC" />
+  <meta property="og:description" content="Otevřený inkubátor nápadů pro NH₃, CCU a bezdrátovou energii." />
+  <meta property="og:url" content="https://sscc.cz/napady.html" />
+  <meta property="og:image" content="assets/img/og-cover.png" />
+  <meta name="twitter:card" content="summary_large_image" />
 
   <!-- Favicons -->
-  <link rel="icon" href="assets/favicons/favicon.ico">
-  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-16x16.png">
-  <link rel="apple-touch-icon" href="assets/favicons/apple-touch-icon.png">
+  <link rel="icon" href="assets/favicons/favicon.ico" />
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-16x16.png" />
+  <link rel="apple-touch-icon" href="assets/favicons/apple-touch-icon.png" />
+  <link rel="manifest" href="assets/favicons/site.webmanifest" />
 
-  <!-- CSS (jednou) -->
-  <link rel="preload" href="assets/style.css?v=1" as="style">
-  <link rel="stylesheet" href="assets/style.css?v=1">
+  <!-- Canonical & alternate -->
+  <link rel="canonical" href="https://sscc.cz/napady.html" />
+  <link rel="alternate" hreflang="en" href="en/ideas.html" />
+  <link rel="alternate" hreflang="cs" href="napady.html" />
+
+  <!-- CSS (centralizované) -->
+  <link rel="preload" href="assets/style.css?v=1" as="style" />
+  <link rel="stylesheet" href="assets/style.css?v=1" />
 </head>
+<body class="site">
+  <a class="skip-link" href="#obsah">Přeskočit na obsah</a>
 
+  <!-- Header -->
+  <header class="header" role="banner" aria-label="Hlavní hlavička">
+    <div class="container header__inner">
+      <a class="brand" href="index.html" aria-label="SSCC domů">
+        <img class="brand__logo" src="assets/logos/sscc-logo-oval.svg" alt="SSCC logo"
+             onerror="this.outerHTML='<span class=&quot;brand__text&quot;>SSCC</span>'" />
+        <span class="brand__tagline">SolarSpace Carbon Cycle</span>
+      </a>
 
-<body>
-<!-- HLAVIČKA -->
-<header class="site-header">
-  <div class="container header-inner">
+      <nav class="nav" role="navigation" aria-label="Hlavní navigace">
+        <ul class="menu">
+          <li><a href="index.html">Domů</a></li>
+          <li><a href="projekty.html">Projekty</a></li>
+          <li><a class="is-active" href="napady.html" aria-current="page">Nápady</a></li>
+          <li><a href="konsorcium.html">Konsorcium</a></li>
+          <li><a href="edukace.html">Edukace</a></li>
+        </ul>
+      </nav>
 
-    <a class="brand-combo" href="index.html" aria-label="SSCC domů">
-      <div class="logo-frame">
-        <img class="main-logo" src="assets/img/logo-sscc.png" alt="SSCC logo">
+      <div class="lang">
+        <a class="lang__btn" href="en/ideas.html" hreflang="en" aria-label="Switch to English">EN</a>
+        <span class="lang__sep" aria-hidden="true">/</span>
+        <span class="lang__current" aria-current="true">CS</span>
       </div>
-      <div class="brand-block">
-        <div class="brand-name">SSCC</div>
-        <div class="brand-tagline">SolarSpace Carbon Cycle</div>
-      </div>
-    </a>
-
-    <nav class="site-nav" aria-label="Hlavní navigace">
-      <ul class="menu">
-        <li><a href="projekt-sscc.html">Projekt</a></li>
-        <li><a href="projekty.html">Projekty</a></li>
-        <li><a href="spoluprace.html">Spolupráce</a></li>
-        <li><a href="edukace.html">Edukace</a></li>
-        <li><a href="konsorcium.html">Konsorcium</a></li>
-        <li class="lang"><a href="index-en.html" hreflang="en" rel="alternate">EN</a></li>
-      </ul>
-    </nav>
-
-  </div>
-</header>
-
-
-  <main class="container">
-    <section class="hero">
-      <div>
-        <h1>Nápady</h1>
-        <p class="lead">SSCC je otevřená platforma — krok za krokem stavíme funkční řešení, nápady a piloty s jasnou ekonomikou.</p>
-      </div>
-      <div class="card hidden" id="hero-img" aria-hidden="true">
-        <!-- prostor pro pozdější hero image -->
-      </div>
-    </section>
-
-    
-<section class="card">
-  <h2>Geoterma ze sopek – přenos &amp; ETS2 fit</h2>
-  <p>Koncept: využití vulkanických zón pro stabilní geotermální výrobu a přenos (HVDC / HTHP). Níže pracovní tabulka parametrů a ztrát.</p>
-  <table>
-    <tr><th>Segment</th><th>Parametr</th><th>Pozn.</th></tr>
-    <tr><td>Zdroj</td><td>150–250&nbsp;MW_th</td><td>hlubinné vrty v zóně s vysokým gradientem</td></tr>
-    <tr><td>Přenos</td><td>HVDC 500&nbsp;kV</td><td>cca 3% ztráty / 1000&nbsp;km</td></tr>
-    <tr><td>ETS2</td><td>0 povolenek</td><td>obnovitelný zdroj → mimo ETS</td></tr>
-  </table>
-  <p class="muted">Pozn.: interaktivní simulátor dodáme později (Python → JS).</p>
-</section>
-
-<section class="cta">
-  <h3>Máte data k lokalitám / přenosům?</h3>
-  <p>Ozvěte se: <a href="mailto:martin.klic46@gmail.com">martin.klic46@gmail.com</a>. Rádi přidáme vaše vstupy i spoluautorství.</p>
-</section>
-
-  </main>
-
-<!-- PATIČKA -->
-<footer class="site-footer">
-  <div class="container footer-inner">
-    <div class="footer-left">
-      © 2025 <strong>SolarSpace Carbon Cycle (SSCC)</strong> ·
-      Navrhl a spravuje SSCC Consortium · Powered by clean energy ✶
     </div>
+  </header>
 
-    <nav class="footer-links" aria-label="Spodní navigace">
-      <a href="projekty.html">Projekty</a> ·
-      <a href="edukace.html">Edukace</a> ·
-      <a href="napady.html">Nápady</a> ·
-      <a href="konsorcium.html">Konsorcium</a> ·
-      <a href="spoluprace.html">Spolupráce</a>
-    </nav>
-  </div>
-</footer>
-  <script src="assets/js/main.js"></script>
-  <script>
-  (() => {
-    const here = (location.pathname.split('/').pop() || 'index.html').toLowerCase();
-    document.querySelectorAll('.site-nav a, .footer-links a').forEach(a => {
-      const href = (a.getAttribute('href') || '').toLowerCase();
-      if (href && href === here) {
-        a.classList.add('active');
-        a.setAttribute('aria-current', 'page');
-      }
-    });
-  })();
-</script>
+  <!-- Hero -->
+  <section class="hero hero--compact" id="obsah">
+    <div class="container hero__inner">
+      <div class="hero__copy">
+        <h1>Nápady SSCC</h1>
+        <p class="lead">
+          Otevřený inkubátor návrhů — od skic a hypotéz po ověřené postupy. Každý nápad má
+          jasný <strong>popis</strong>, <strong>potenciál</strong>, <strong>rizika</strong> a <strong>další krok</strong>.
+        </p>
+        <div class="hero__cta">
+          <a class="btn btn--primary" href="#inkubator">Prohlédnout inkubátor</a>
+          <a class="btn btn--ghost" href="#pridat">Přidat nápad</a>
+        </div>
+      </div>
+      <div class="hero__art">
+        <img class="hero__image" src="assets/img/ideas-concept.png" alt="Koncept inkubátoru nápadů" loading="eager" />
+      </div>
+    </div>
+  </section>
 
+  <!-- Filtr / TOC (statický placeholder, logika může být později doplněna JS) -->
+  <section class="section">
+    <div class="container">
+      <h2>Rychlá orientace</h2>
+      <div class="quicklinks__grid">
+        <a class="qlink" href="#inkubator">Inkubátor</a>
+        <a class="qlink" href="#priority">Priority</a>
+        <a class="qlink" href="#pridat">Přidat nápad</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Inkubátor nápadů -->
+  <section class="section" id="inkubator">
+    <div class="container">
+      <h2>Inkubátor nápadů</h2>
+
+      <div class="accordion" role="tablist">
+        <details class="acc">
+          <summary class="acc__title">I-01 — Mikro-rectenna panel pro laboratorní demonstraci</summary>
+          <div class="acc__content">
+            <p><strong>Popis:</strong> Malý 2.45&nbsp;GHz panel (např. 10×10 prvků) s usměrněním, měřením účinnosti a bezpečnostními limity.</p>
+            <p><strong>Potenciál:</strong> Rychlé ověření řetězce od RF přijmu po DC výstup; podklad pro škálování.</p>
+            <p><strong>Rizika:</strong> EMC, přesnost měření, stabilita diod, bezpečnostní zóny.</p>
+            <p><strong>Další krok:</strong> Návrh PCB, jednoduchá měřicí linka, validace s kontrolovaným zdrojem.</p>
+          </div>
+        </details>
+
+        <details class="acc">
+          <summary class="acc__title">I-02 — NH₃ mikro-smyčka s nízkoteplotním reaktorem</summary>
+          <div class="acc__content">
+            <p><strong>Popis:</strong> Bench-top smyčka s elektrolyzérem (H₂), kompresí, katalytickou syntézou a mini-skladováním.</p>
+            <p><strong>Potenciál:</strong> Ověření řízení a účinnosti v malém měřítku; bezpečnostní protokoly.</p>
+            <p><strong>Rizika:</strong> Tlaková bezpečnost, teploty, čistota plynů, dostupnost katalyzátorů.</p>
+            <p><strong>Další krok:</strong> P&ID, HAZOP pre-check, nákup komponent a senzoriky.</p>
+          </div>
+        </details>
+
+        <details class="acc">
+          <summary class="acc__title">I-03 — CCU sorpční modul pro zdroj nízké koncentrace</summary>
+          <div class="acc__content">
+            <p><strong>Popis:</strong> Testovací kolona se sorbentem/MEA pro nízké koncentrace CO₂ (např. spaliny, ventilace).</p>
+            <p><strong>Potenciál:</strong> Datový základ pro energetickou bilanci a integraci s NH₃ smyčkou.</p>
+            <p><strong>Rizika:</strong> Degradace sorbentů, korozivita, regenerace, OPEX.</p>
+            <p><strong>Další krok:</strong> Výběr sorbentů, návrh regenerace, měřicí protokol.</p>
+          </div>
+        </details>
+
+        <details class="acc">
+          <summary class="acc__title">I-04 — Digitální dvojče (CFD+EM) pro integrační studie</summary>
+          <div class="acc__content">
+            <p><strong>Popis:</strong> Spojení CFD toků/tepla s EM simulací rectenny a řízení energie.</p>
+            <p><strong>Potenciál:</strong> Snížení iterací prototypu; bezpečnostní scénáře „co-when“.</p>
+            <p><strong>Rizika:</strong> Datové nároky, přesnost modelů, ověření proti měření.</p>
+            <p><strong>Další krok:</strong> Volba solverů, validační set-up, rozhraní na měření.</p>
+          </div>
+        </details>
+
+        <details class="acc">
+          <summary class="acc__title">I-05 — Standardy BOZP &amp; veřejná komunikace</summary>
+          <div class="acc__content">
+            <p><strong>Popis:</strong> Základní bezpečnostní standardy a srozumitelná komunikace rizik/benefitů.</p>
+            <p><strong>Potenciál:</strong> Zrychlení povolovacích procesů a přijetí veřejností.</p>
+            <p><strong>Rizika:</strong> Nejednotná legislativa, mylné interpretace.</p>
+            <p><strong>Další krok:</strong> Draft bezpečnostní příručky, FAQ pro partnery a obce.</p>
+          </div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- Priority -->
+  <section class="section" id="priority">
+    <div class="container">
+      <h2>Aktuální priority</h2>
+      <div class="cards cards--grid-3">
+        <article class="card">
+          <h3>Přímé ověření účinnosti</h3>
+          <p>Metodiky měření pro rectennu, NH₃ smyčku a CCU — srovnatelné napříč partnery.</p>
+          <ul class="ticks">
+            <li>Jasné metriky (η, LCOA, OPEX)</li>
+            <li>Replikovatelné testy</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>Bezpečnost &amp; compliance</h3>
+          <p>BOZP rámec, HAZOP pre-study, EMC a provozní limity.</p>
+          <ul class="ticks">
+            <li>Standardy a školení</li>
+            <li>Incident response</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>Konsorcium &amp; rozpočet</h3>
+          <p>Role partnerů, spolufinancování, plán WP a milníků.</p>
+          <ul class="ticks">
+            <li>MoU / LoI šablony</li>
+            <li>Roadmap Q1–Q4</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Přidat nápad -->
+  <section class="section" id="pridat">
+    <div class="container">
+      <h2>Přidat nápad</h2>
+      <p>Pošlete stručný popis, potenciál, rizika a navržený další krok. Preferujeme konkrétní a ověřitelné návrhy.</p>
+
+      <!-- Pokud používáte Formspree nebo jinou službu, stačí nahradit action a případně hidden pole. -->
+      <form class="form" method="post" action="https://formspree.io/f/your-id">
+        <div class="form__row">
+          <label for="f-name">Jméno / Organizace</label>
+          <input id="f-name" name="name" type="text" required />
+        </div>
+        <div class="form__row">
+          <label for="f-email">E-mail</label>
+          <input id="f-email" name="email" type="email" required />
+        </div>
+        <div class="form__row">
+          <label for="f-title">Název nápadu</label>
+          <input id="f-title" name="idea_title" type="text" required />
+        </div>
+        <div class="form__row">
+          <label for="f-desc">Popis (max. 1200 znaků)</label>
+          <textarea id="f-desc" name="idea_desc" rows="5" maxlength="1200" required></textarea>
+        </div>
+        <div class="form__row form__row--grid">
+          <div>
+            <label for="f-potential">Potenciál (stručně)</label>
+            <input id="f-potential" name="idea_potential" type="text" />
+          </div>
+          <div>
+            <label for="f-risks">Rizika (stručně)</label>
+            <input id="f-risks" name="idea_risks" type="text" />
+          </div>
+        </div>
+        <div class="form__row">
+          <label for="f-next">Další krok (co validovat hned teď)</label>
+          <input id="f-next" name="idea_next" type="text" />
+        </div>
+        <div class="form__actions">
+          <button class="btn btn--primary" type="submit">Odeslat</button>
+          <a class="btn btn--ghost" href="konsorcium.html">Chci se zapojit</a>
+        </div>
+        <input type="hidden" name="_subject" value="Nový nápad pro SSCC" />
+      </form>
+
+      <div class="note">
+        Odesláním souhlasíte se zpracováním podkladů pro účely posouzení v rámci SSCC. Na e-mail obdržíte potvrzení.
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer" role="contentinfo">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <a class="brand brand--footer" href="index.html" aria-label="SSCC domů">
+          <img class="brand__logo" src="assets/logos/sscc-logo-round.svg" alt="SSCC logo"
+               onerror="this.outerHTML='<span class=&quot;brand__text&quot;>SSCC</span>'" />
+        </a>
+        <p class="footer__tag">© <span id="year">2025</span> SSCC — SolarSpace Carbon Cycle</p>
+      </div>
+      <nav class="footer__nav" aria-label="Footer navigace">
+        <ul class="menu menu--footer">
+          <li><a href="index.html">Domů</a></li>
+          <li><a href="projekty.html">Projekty</a></li>
+          <li><a class="is-active" href="napady.html" aria-current="page">Nápady</a></li>
+          <li><a href="konsorcium.html">Konsorcium</a></li>
+          <li><a href="edukace.html">Edukace</a></li>
+        </ul>
+      </nav>
+      <div class="footer__meta">
+        <a href="sitemap.xml" rel="sitemap">Sitemap</a>
+        <span class="dot">•</span>
+        <a href="robots.txt">robots.txt</a>
+      </div>
+    </div>
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </footer>
 </body>
 </html>

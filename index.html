@@ -51,4 +51,111 @@
           <li><a href="projekty.html">Projekty</a></li>
           <li><a href="napady.html">Nápady</a></li>
           <li><a href="konsorcium.html">Konsorcium</a></li>
-          <li><a href="edukace.htm
+          <li><a href="edukace.html">Edukace</a></li>
+        </ul>
+      </nav>
+
+      <div class="lang">
+        <a class="lang__btn" href="en/index.html" hreflang="en" aria-label="Switch to English">EN</a>
+        <span class="lang__sep" aria-hidden="true">/</span>
+        <span class="lang__current" aria-current="true">CS</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero" id="obsah">
+    <div class="container hero__inner">
+      <div class="hero__copy">
+        <h1>SolarSpace Carbon Cycle</h1>
+        <p class="lead">
+          Pilotní iniciativa pro <strong>zelený NH₃</strong>, <strong>zachytávání a využití CO₂</strong> a
+          <strong>bezdrátový přenos energie</strong> — od studie po průmyslové nasazení.
+        </p>
+        <div class="hero__cta">
+          <a class="btn btn--primary" href="projekty.html">Prohlédnout projekty</a>
+          <a class="btn btn--ghost" href="konsorcium.html">Přidat se ke konsorciu</a>
+        </div>
+      </div>
+      <div class="hero__art">
+        <img class="hero__image" src="assets/img/hero-sun.png" alt="Koncepční grafika SSCC" loading="eager" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Quick links -->
+  <section class="quicklinks">
+    <div class="container quicklinks__grid">
+      <a class="qlink" href="projekty.html">
+        <h3>Projekty</h3>
+        <p>Od pilotní jednotky po 10&nbsp;MW systémy. Technické milníky, rozpočet, časová osa.</p>
+      </a>
+      <a class="qlink" href="napady.html">
+        <h3>Nápady</h3>
+        <p>Inkubační nápady, které stojí za prověření — otevřené k připomínkám a spolupráci.</p>
+      </a>
+      <a class="qlink" href="konsorcium.html">
+        <h3>Konsorcium</h3>
+        <p>Akademie × průmysl × veřejný sektor. Jak se zapojit a co očekáváme.</p>
+      </a>
+      <a class="qlink" href="edukace.html">
+        <h3>Edukace</h3>
+        <p>Materiály pro studenty a partnery: základy, kontext, odkazy a zdroje.</p>
+      </a>
+    </div>
+  </section>
+
+  <!-- About / Value -->
+  <section class="about">
+    <div class="container about__grid">
+      <div>
+        <h2>Proč SSCC</h2>
+        <p>
+          SSCC propojuje <em>space-based solar power</em>, <em>rectenna</em> bezdrátový přenos a
+          <em>decentralizovanou syntézu amoniaku</em> s CCU. Cíl: urychlit dekarbonizaci a nabídnout
+          průmyslově nasaditelné stavebnice pro energetiku, výrobu a infrastrukturu.
+        </p>
+      </div>
+      <div>
+        <h2>Stav a plán</h2>
+        <ul class="ticks">
+          <li>Konsolidace konceptu a partnerství (běží)</li>
+          <li>Technické studie, simulace a bezpečnostní rámec</li>
+          <li>Prototypy: rectenna pole, NH₃ smyčka, CO₂ modul</li>
+          <li>Demonstrátor → pilotní jednotka → škálování</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer" role="contentinfo">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <a class="brand brand--footer" href="index.html" aria-label="SSCC domů">
+          <img class="brand__logo" src="assets/logos/sscc-logo-round.svg" alt="SSCC logo" onerror="this.outerHTML='<span class=&quot;brand__text&quot;>SSCC</span>'" />
+        </a>
+        <p class="footer__tag">© <span id="year">2025</span> SSCC — SolarSpace Carbon Cycle</p>
+      </div>
+      <nav class="footer__nav" aria-label="Footer navigace">
+        <ul class="menu menu--footer">
+          <li><a href="index.html">Domů</a></li>
+          <li><a href="projekty.html">Projekty</a></li>
+          <li><a href="napady.html">Nápady</a></li>
+          <li><a href="konsorcium.html">Konsorcium</a></li>
+          <li><a href="edukace.html">Edukace</a></li>
+        </ul>
+      </nav>
+      <div class="footer__meta">
+        <a href="sitemap.xml" rel="sitemap">Sitemap</a>
+        <span class="dot">•</span>
+        <a href="robots.txt">robots.txt</a>
+      </div>
+    </div>
+    <script>
+      // Jednoduchá aktualizace roku ve footeru
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </footer>
+</body>
+</html>

@@ -29,13 +29,12 @@
   <link rel="alternate" hreflang="cs" href="projekty.html" />
 
   <!-- CSS (centralizované) -->
-  <link rel="preload" href="assets/style.css?v=1" as="style" />
-  <link rel="stylesheet" href="assets/style.css?v=1" />
+  <link rel="preload" href="assets/style/style.css?v=1" as="style" />
+  <link rel="stylesheet" href="assets/style/style.css?v=1" />
 </head>
 <body class="site">
   <a class="skip-link" href="#obsah">Přeskočit na obsah</a>
 
-  <!-- Header -->
   <header class="header" role="banner" aria-label="Hlavní hlavička">
     <div class="container header__inner">
       <a class="brand" href="index.html" aria-label="SSCC domů">
@@ -61,7 +60,6 @@
     </div>
   </header>
 
-  <!-- Hero -->
   <section class="hero hero--compact" id="obsah">
     <div class="container hero__inner">
       <div class="hero__copy">
@@ -81,7 +79,6 @@
     </div>
   </section>
 
-  <!-- Přehled projektových celků -->
   <section class="section" id="prehled">
     <div class="container">
       <h2>Přehled projektových celků</h2>
@@ -119,7 +116,6 @@
     </div>
   </section>
 
-  <!-- Milníky a roadmap -->
   <section class="section">
     <div class="container">
       <h2>Milníky &amp; roadmap</h2>
@@ -175,12 +171,11 @@
       </div>
 
       <div class="note">
-        Pozn.: Časování je orientační a bude zpevnено po potvrzení partnerů a financování.
+        Pozn.: Časování je orientační a bude zpevneno po potvrzení partnerů a financování.
       </div>
     </div>
   </section>
 
-  <!-- Balíčky práce (WP) -->
   <section class="section">
     <div class="container">
       <h2>Balíčky práce (WP)</h2>
@@ -230,81 +225,10 @@
     </div>
   </section>
 
-  <!-- Rozpočet & zdroje -->
-  <section class="section">
-    <div class="container">
-      <h2>Rozpočet &amp; zdroje (orientačně)</h2>
-      <div class="cards cards--grid-3">
-        <article class="card">
-          <h3>Celkem</h3>
-          <p>~6&nbsp;mil.&nbsp;EUR (grantové krytí do ~70&nbsp;%).</p>
-          <ul class="ticks">
-            <li>EU/Horizon synergie</li>
-            <li>Spolufinancování partnerů</li>
-          </ul>
-        </article>
-        <article class="card">
-          <h3>CapEx</h3>
-          <p>Prototypy, pilotní zařízení, měření, bezpečnostní infrastruktura.</p>
-          <ul class="ticks">
-            <li>NH₃ a CCU moduly</li>
-            <li>Rectenna pole &amp; měřicí linka</li>
-          </ul>
-        </article>
-        <article class="card">
-          <h3>OpEx</h3>
-          <p>Vývoj, provoz pilotu, energie, servis, compliance a školení.</p>
-          <ul class="ticks">
-            <li>Technický tým</li>
-            <li>Bezpečnost &amp; audit</li>
-          </ul>
-        </article>
-      </div>
-      <div class="note">
-        Podrobná rozpadová tabulka bude zveřejněna po finalizaci konsorcia.
-      </div>
-    </div>
-  </section>
-
-  <!-- CTA -->
   <section class="section section--cta">
     <div class="container cta">
       <h2>Přidejte se k vývoji</h2>
       <p>Hledáme partnery z akademie i průmyslu: výpočty, prototypy, provoz pilotu a bezpečnost.</p>
       <div class="hero__cta">
         <a class="btn btn--primary" href="konsorcium.html">Konsorcium</a>
-        <a class="btn btn--ghost" href="edukace.html">Edukace</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="footer" role="contentinfo">
-    <div class="container footer__inner">
-      <div class="footer__brand">
-        <a class="brand brand--footer" href="index.html" aria-label="SSCC domů">
-          <img class="brand__logo" src="assets/logos/sscc-logo-round.svg" alt="SSCC logo" onerror="this.outerHTML='<span class=&quot;brand__text&quot;>SSCC</span>'" />
-        </a>
-        <p class="footer__tag">© <span id="year">2025</span> SSCC — SolarSpace Carbon Cycle</p>
-      </div>
-      <nav class="footer__nav" aria-label="Footer navigace">
-        <ul class="menu menu--footer">
-          <li><a href="index.html">Domů</a></li>
-          <li><a class="is-active" href="projekty.html" aria-current="page">Projekty</a></li>
-          <li><a href="napady.html">Nápady</a></li>
-          <li><a href="konsorcium.html">Konsorcium</a></li>
-          <li><a href="edukace.html">Edukace</a></li>
-        </ul>
-      </nav>
-      <div class="footer__meta">
-        <a href="sitemap.xml" rel="sitemap">Sitemap</a>
-        <span class="dot">•</span>
-        <a href="robots.txt">robots.txt</a>
-      </div>
-    </div>
-    <script>
-      document.getElementById('year').textContent = new Date().getFullYear();
-    </script>
-  </footer>
-</body>
-</html>
+        <a class="btn btn--ghost" href="edukace.html">Edukace</

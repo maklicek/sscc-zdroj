@@ -101,6 +101,18 @@
   </div>
 </footer>
 
+<script>
+  (() => {
+    const here = (location.pathname.split('/').pop() || 'index.html').toLowerCase();
+    document.querySelectorAll('.site-nav a, .footer-links a').forEach(a => {
+      const href = (a.getAttribute('href') || '').toLowerCase();
+      if (href && href === here) {
+        a.classList.add('active');
+        a.setAttribute('aria-current', 'page');
+      }
+    });
+  })();
+</script>
 
 </body>
 </html>

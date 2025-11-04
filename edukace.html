@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>SSCC — SolarSpace Carbon Cycle</title>
-  <meta name="description" content="SolarSpace Carbon Cycle — inspirativní studnice nápadů a spoluprací.">
+  <title>Edukace | SSCC — SolarSpace Carbon Cycle</title>
+  <meta name="description" content="Materiály, kurzy a otevřené zdroje pro školy, univerzity i veřejnost.">
 
   <!-- Favicons -->
   <link rel="icon" href="assets/favicons/favicon.ico">
@@ -16,62 +16,82 @@
   <link rel="preload" href="assets/style.css?v=1" as="style">
   <link rel="stylesheet" href="assets/style.css?v=1">
 </head>
-
-</head>
-
 <body>
-<ul class="menu">
-  <li><a href="projekty.html">Projekty</a></li>
-  <li><a href="napady.html">Nápady</a></li>
-  <li><a href="spoluprace.html">Spolupráce</a></li>
-  <li><a href="edukace.html">Edukace</a></li>
-  <li><a href="konsorcium.html">Konsorcium</a></li>
-  <li class="lang"><a href="index-en.html">EN</a></li>
-</ul>
 
+  <!-- HLAVIČKA (sjednocená pro všechny stránky) -->
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a href="index.html" class="brand" aria-label="SSCC – domů">
+        <img src="assets/logos/sscc-logo-round.png" alt="SSCC logo" class="logo">
+        <span class="brand-name">
+          <strong>SSCC</strong><br>
+          <small>SolarSpace Carbon Cycle</small>
+        </span>
+      </a>
 
+      <nav class="main-nav site-nav" aria-label="Hlavní navigace">
+        <ul class="menu">
+          <li><a href="projekty.html">Projekty</a></li>
+          <li><a href="napady.html">Nápady</a></li>
+          <li><a href="spoluprace.html">Spolupráce</a></li>
+          <li><a href="edukace.html">Edukace</a></li>
+          <li><a href="konsorcium.html">Konsorcium</a></li>
+          <li class="lang"><a href="index-en.html" class="lang-btn">EN</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
+  <!-- OBSAH -->
   <main class="container">
     <section class="hero">
       <div>
-        <h1>Edukace</h1>
-        <p class="lead">SSCC je otevřená platforma — krok za krokem stavíme funkční řešení, nápady a piloty s jasnou ekonomikou.</p>
+        <h1 class="hero-title">Edukace</h1>
+        <p class="lead">
+          SSCC je otevřená platforma — krok za krokem stavíme funkční řešení, nápady a piloty s jasnou ekonomikou.
+        </p>
       </div>
       <div class="card hidden" id="hero-img" aria-hidden="true">
-        <!-- prostor pro pozdější hero image -->
+        <!-- volitelné místo pro ilustraci -->
       </div>
     </section>
 
-    
-<section class="card">
-  <h2>Materiály</h2>
-  <ul>
-    <li><a href="#">Obecný popis projektu (PDF) — bude doplněno</a></li>
-  </ul>
-</section>
-
+    <section class="card">
+      <h2>Materiály</h2>
+      <ul>
+        <li><a href="#">Obecný popis projektu (PDF) — bude doplněno</a></li>
+      </ul>
+    </section>
   </main>
 
-<nav class="footer-links" aria-label="Spodní navigace">
-  <a href="projekty.html">Projekty</a> ·
-  <a href="edukace.html">Edukace</a> ·
-  <a href="napady.html">Nápady</a> ·
-  <a href="konsorcium.html">Konsorcium</a> ·
-  <a href="spoluprace.html">Spolupráce</a>
-</nav>
+  <!-- PATIČKA (sjednocená pro všechny stránky) -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-inner">
+      <div class="footer-left">
+        © 2025 <strong>SolarSpace Carbon Cycle (SSCC)</strong> — Navrhl a spravuje SSCC Consortium · Powered by clean energy ✶
+      </div>
+      <nav class="footer-links" aria-label="Spodní navigace">
+        <a href="projekty.html">Projekty</a> ·
+        <a href="edukace.html">Edukace</a> ·
+        <a href="napady.html">Nápady</a> ·
+        <a href="konsorcium.html">Konsorcium</a> ·
+        <a href="spoluprace.html">Spolupráce</a>
+      </nav>
+    </div>
+  </footer>
 
-<script>
-  (() => {
-    const here = (location.pathname.split('/').pop() || 'index.html').toLowerCase();
-    document.querySelectorAll('.site-nav a, .footer-links a').forEach(a => {
-      const href = (a.getAttribute('href') || '').toLowerCase();
-      if (href && href === here) {
-        a.classList.add('active');
-        a.setAttribute('aria-current', 'page');
-      }
-    });
-  })();
-</script>
-
+  <!-- Aktivace aktivní položky v menu/patičce -->
+  <script>
+    (() => {
+      const here = (location.pathname.split('/').pop() || 'index.html').toLowerCase();
+      document.querySelectorAll('.main-nav a, .footer-links a').forEach(a => {
+        const href = (a.getAttribute('href') || '').toLowerCase();
+        if (href && href === here) {
+          a.classList.add('active');
+          a.setAttribute('aria-current', 'page');
+        }
+      });
+    })();
+  </script>
 </body>
 </html>

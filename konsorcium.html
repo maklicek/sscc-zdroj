@@ -3,99 +3,336 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>SSCC — SolarSpace Carbon Cycle</title>
-  <meta name="description" content="SolarSpace Carbon Cycle — inspirativní studnice nápadů a spoluprací.">
+  <title>Konsorcium | SSCC — SolarSpace Carbon Cycle</title>
+  <meta name="description" content="SSCC konsorcium: akademie × průmysl × veřejný sektor. Role, závazky, jak se přidat, governance, dokumenty (MoU/LoI)." />
+  <meta name="keywords" content="SSCC, konsorcium, partnerství, MoU, LoI, akademie, průmysl, veřejný sektor" />
+  <meta name="theme-color" content="#0c1219" />
+
+  <!-- Open Graph / Twitter -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Konsorcium | SSCC" />
+  <meta property="og:description" content="Zapojte se do konsorcia: role, závazky, governance a kroky k přistoupení." />
+  <meta property="og:url" content="https://sscc.cz/konsorcium.html" />
+  <meta property="og:image" content="assets/img/og-cover.png" />
+  <meta name="twitter:card" content="summary_large_image" />
 
   <!-- Favicons -->
-  <link rel="icon" href="assets/favicons/favicon.ico">
-  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-16x16.png">
-  <link rel="apple-touch-icon" href="assets/favicons/apple-touch-icon.png">
+  <link rel="icon" href="assets/favicons/favicon.ico" />
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-16x16.png" />
+  <link rel="apple-touch-icon" href="assets/favicons/apple-touch-icon.png" />
+  <link rel="manifest" href="assets/favicons/site.webmanifest" />
 
-  <!-- CSS (jednou) -->
-  <link rel="preload" href="assets/style.css?v=1" as="style">
-  <link rel="stylesheet" href="assets/style.css?v=1">
+  <!-- Canonical & alternate -->
+  <link rel="canonical" href="https://sscc.cz/konsorcium.html" />
+  <link rel="alternate" hreflang="en" href="en/consortium.html" />
+  <link rel="alternate" hreflang="cs" href="konsorcium.html" />
+
+  <!-- CSS (centralizované) -->
+  <link rel="preload" href="assets/style.css?v=1" as="style" />
+  <link rel="stylesheet" href="assets/style.css?v=1" />
 </head>
-<!-- HLAVIČKA -->
-<header class="site-header">
-  <div class="container header-inner">
+<body class="site">
+  <a class="skip-link" href="#obsah">Přeskočit na obsah</a>
 
-    <a class="brand-combo" href="index.html" aria-label="SSCC domů">
-      <div class="logo-frame">
-        <img class="main-logo" src="assets/img/logo-sscc.png" alt="SSCC logo">
+  <!-- Header -->
+  <header class="header" role="banner" aria-label="Hlavní hlavička">
+    <div class="container header__inner">
+      <a class="brand" href="index.html" aria-label="SSCC domů">
+        <img class="brand__logo" src="assets/logos/sscc-logo-oval.svg" alt="SSCC logo"
+             onerror="this.outerHTML='<span class=&quot;brand__text&quot;>SSCC</span>'" />
+        <span class="brand__tagline">SolarSpace Carbon Cycle</span>
+      </a>
+
+      <nav class="nav" role="navigation" aria-label="Hlavní navigace">
+        <ul class="menu">
+          <li><a href="index.html">Domů</a></li>
+          <li><a href="projekty.html">Projekty</a></li>
+          <li><a href="napady.html">Nápady</a></li>
+          <li><a class="is-active" href="konsorcium.html" aria-current="page">Konsorcium</a></li>
+          <li><a href="edukace.html">Edukace</a></li>
+        </ul>
+      </nav>
+
+      <div class="lang">
+        <a class="lang__btn" href="en/consortium.html" hreflang="en" aria-label="Switch to English">EN</a>
+        <span class="lang__sep" aria-hidden="true">/</span>
+        <span class="lang__current" aria-current="true">CS</span>
       </div>
-      <div class="brand-block">
-        <div class="brand-name">SSCC</div>
-        <div class="brand-tagline">SolarSpace Carbon Cycle</div>
-      </div>
-    </a>
-
-    <nav class="site-nav" aria-label="Hlavní navigace">
-      <ul class="menu">
-        <li><a href="projekt-sscc.html">Projekt</a></li>
-        <li><a href="projekty.html">Projekty</a></li>
-        <li><a href="spoluprace.html">Spolupráce</a></li>
-        <li><a href="edukace.html">Edukace</a></li>
-        <li><a href="konsorcium.html">Konsorcium</a></li>
-        <li class="lang"><a href="index-en.html" hreflang="en" rel="alternate">EN</a></li>
-      </ul>
-    </nav>
-
-  </div>
-</header>
-
-
-
-  <main class="container">
-    <section class="hero">
-      <div>
-        <h1>Konsorcium</h1>
-        <p class="lead">SSCC je otevřená platforma — krok za krokem stavíme funkční řešení, nápady a piloty s jasnou ekonomikou.</p>
-      </div>
-      <div class="card hidden" id="hero-img" aria-hidden="true">
-        <!-- prostor pro pozdější hero image -->
-      </div>
-    </section>
-
-    
-<section class="card-grid">
-  <div class="card"><h3>Členové</h3><p>Přehled partnerů a rolí — brzy.</p></div>
-  <div class="card"><h3>Materiály</h3><p>Abstrakty, NDA, technické listy (privátní sekce) — brzy.</p></div>
-  <div class="card"><h3>Piloty &amp; testování</h3><p>Možnosti zapojení do reálného provozu — brzy.</p></div>
-</section>
-
-  </main>
-
-<!-- PATIČKA -->
-<footer class="site-footer">
-  <div class="container footer-inner">
-    <div class="footer-left">
-      © 2025 <strong>SolarSpace Carbon Cycle (SSCC)</strong> ·
-      Navrhl a spravuje SSCC Consortium · Powered by clean energy ✶
     </div>
+  </header>
 
-    <nav class="footer-links" aria-label="Spodní navigace">
-      <a href="projekty.html">Projekty</a> ·
-      <a href="edukace.html">Edukace</a> ·
-      <a href="napady.html">Nápady</a> ·
-      <a href="konsorcium.html">Konsorcium</a> ·
-      <a href="spoluprace.html">Spolupráce</a>
-    </nav>
-  </div>
-</footer>
-  <script src="assets/js/main.js"></script>
-  <script>
-  (() => {
-    const here = (location.pathname.split('/').pop() || 'index.html').toLowerCase();
-    document.querySelectorAll('.site-nav a, .footer-links a').forEach(a => {
-      const href = (a.getAttribute('href') || '').toLowerCase();
-      if (href && href === here) {
-        a.classList.add('active');
-        a.setAttribute('aria-current', 'page');
-      }
-    });
-  })();
-</script>
+  <!-- Hero -->
+  <section class="hero hero--compact" id="obsah">
+    <div class="container hero__inner">
+      <div class="hero__copy">
+        <h1>SSCC Konsorcium</h1>
+        <p class="lead">
+          Spojujeme <strong>akademii</strong>, <strong>průmysl</strong> a <strong>veřejný sektor</strong> pro vývoj
+          a nasazení decentralizované syntézy NH₃, CCU a bezdrátové energie.
+        </p>
+        <div class="hero__cta">
+          <a class="btn btn--primary" href="#jak-se-pridat">Jak se přidat</a>
+          <a class="btn btn--ghost" href="#role">Role &amp; závazky</a>
+        </div>
+      </div>
+      <div class="hero__art">
+        <img class="hero__image" src="assets/img/consortium-hero.png" alt="Ilustrace spolupráce konsorcia" loading="eager" />
+      </div>
+    </div>
+  </section>
 
+  <!-- Důvody / Hodnota -->
+  <section class="section">
+    <div class="container about__grid">
+      <div>
+        <h2>Proč se zapojit</h2>
+        <ul class="ticks">
+          <li>Přístup k výzkumu, prototypům a datům (CFD/EM, LCA, měření účinnosti).</li>
+          <li>Spolutvorba bezpečnostních a provozních standardů.</li>
+          <li>Možnost průmyslového pilotu a škálování do 10&nbsp;MW.</li>
+          <li>Spolupráce v grantových výzvách a spolufinancování.</li>
+        </ul>
+      </div>
+      <div>
+        <h2>Co očekáváme</h2>
+        <ul class="ticks">
+          <li>Jasné role a kapacity (výpočty, prototypy, zkušebna, provoz).</li>
+          <li>Zodpovědné dodržování BOZP/EMC a compliance.</li>
+          <li>Transparentní reporting výstupů a dat.</li>
+          <li>Vkládání know-how do sdíleného rámce (licence dle domluvy).</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Role & závazky -->
+  <section class="section" id="role">
+    <div class="container">
+      <h2>Role &amp; závazky</h2>
+      <div class="cards cards--grid-3">
+        <article class="card">
+          <h3>Akademičtí partneři</h3>
+          <p>Simulace (CFD/EM), experimenty, bezpečnostní studie, školení a supervize studentů.</p>
+          <ul class="ticks">
+            <li>WP2: Studie &amp; simulace</li>
+            <li>WP1: BOZP &amp; compliance</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>Průmysloví partneři</h3>
+          <p>Výroba komponent, integrace, testy, provoz pilotu a příprava škálování.</p>
+          <ul class="ticks">
+            <li>WP3/4/5: Rectenna, NH₃, CCU</li>
+            <li>WP6: Integrace &amp; pilot</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>Veřejný sektor / města</h3>
+          <p>Umisťování demonstrátorů, povolovací procesy, komunikace s veřejností.</p>
+          <ul class="ticks">
+            <li>BOZP rámec &amp; standardy</li>
+            <li>Ověření v reálném prostředí</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Governance -->
+  <section class="section">
+    <div class="container">
+      <h2>Governance</h2>
+      <div class="accordion" role="tablist">
+        <details class="acc">
+          <summary class="acc__title">Řídicí výbor (Steering Committee)</summary>
+          <div class="acc__content">
+            Strategické řízení, milníky, rozpočty, rizika. Schází se měsíčně, kvartálně uzavírá fáze.
+          </div>
+        </details>
+        <details class="acc">
+          <summary class="acc__title">Technická rada (Technical Board)</summary>
+          <div class="acc__content">
+            Architektura, rozhraní mezi WP, validace měření, publikace standardů a metodik.
+          </div>
+        </details>
+        <details class="acc">
+          <summary class="acc__title">BOZP &amp; Compliance</summary>
+          <div class="acc__content">
+            HAZOP pre-study, EMC, kyberbezpečnost, školení, audit shody a bezpečnostních zón.
+          </div>
+        </details>
+        <details class="acc">
+          <summary class="acc__title">Project Management Office (PMO)</summary>
+          <div class="acc__content">
+            Plánování, reporting, dokumentace, řízení verzí, grantová administrativa a IP/licence.
+          </div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- Jak se přidat -->
+  <section class="section" id="jak-se-pridat">
+    <div class="container">
+      <h2>Jak se přidat</h2>
+      <ol class="steps">
+        <li>Vyberte roli a pracovní balíčky (viz výše).</li>
+        <li>Odešlete záměr (LoI) a stručný profil kapacit.</li>
+        <li>Domluvíme rozsah, IP/licenci a bezpečnostní rámec.</li>
+        <li>Podpis MoU a zařazení do roadmapy/pilotu.</li>
+      </ol>
+
+      <div class="cards cards--grid-3">
+        <article class="card">
+          <h3>LoI — Letter of Intent</h3>
+          <p>Krátký záměr, kontakty, kompetence, navrhovaná role a přínos do WP.</p>
+          <p><a href="assets/docs/LoI-template.docx" download>Šablona ke stažení</a></p>
+        </article>
+        <article class="card">
+          <h3>MoU — Memorandum of Understanding</h3>
+          <p>Nezávazný rámec spolupráce, governance, IP a bezpečnostní zásady.</p>
+          <p><a href="assets/docs/MoU-draft.docx" download>Návrh ke stažení</a></p>
+        </article>
+        <article class="card">
+          <h3>Onboarding checklist</h3>
+          <p>Checklist pro technické a administrativní kroky (přístupy, BOZP, reporting).</p>
+          <p><a href="assets/docs/Onboarding-checklist.xlsx" download>Checklist ke stažení</a></p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Kontaktní formulář -->
+  <section class="section">
+    <div class="container">
+      <h2>Kontakt pro konsorcium</h2>
+      <p>Vyplňte formulář, ozveme se s navrženým dalším krokem (call / workshop / NDA).</p>
+
+      <!-- Nahraďte action vlastní endpointem (např. Formspree) -->
+      <form class="form" method="post" action="https://formspree.io/f/your-id">
+        <div class="form__row form__row--grid">
+          <div>
+            <label for="f-org">Organizace</label>
+            <input id="f-org" name="organization" type="text" required />
+          </div>
+          <div>
+            <label for="f-role">Preferovaná role</label>
+            <select id="f-role" name="role" required>
+              <option value="">— vyberte —</option>
+              <option>Akademie</option>
+              <option>Průmysl</option>
+              <option>Veřejný sektor</option>
+              <option>Jiné</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form__row form__row--grid">
+          <div>
+            <label for="f-name">Kontaktní osoba</label>
+            <input id="f-name" name="name" type="text" required />
+          </div>
+          <div>
+            <label for="f-email">E-mail</label>
+            <input id="f-email" name="email" type="email" required />
+          </div>
+        </div>
+
+        <div class="form__row">
+            <label for="f-cap">Kompetence a kapacity (stručně)</label>
+            <textarea id="f-cap" name="capabilities" rows="4" maxlength="1000" required></textarea>
+        </div>
+        <div class="form__row">
+            <label for="f-wp">Zájmové WP / témata</label>
+            <input id="f-wp" name="workpackages" type="text" placeholder="např. WP3 Rectenna, WP4 NH₃" />
+        </div>
+        <div class="form__actions">
+          <button class="btn btn--primary" type="submit">Odeslat zájem</button>
+          <a class="btn btn--ghost" href="edukace.html">Podklady &amp; edukace</a>
+        </div>
+        <input type="hidden" name="_subject" value="SSCC — Zájem o konsorcium" />
+      </form>
+
+      <div class="note">
+        Odesláním souhlasíte se zpracováním údajů pro účely navázání spolupráce v rámci SSCC.
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section">
+    <div class="container">
+      <h2>FAQ</h2>
+      <div class="accordion" role="tablist">
+        <details class="acc">
+          <summary class="acc__title">Jaké je minimální zapojení partnera?</summary>
+          <div class="acc__content">
+            Minimálně 0.2–0.5 FTE na vybrané WP, pravidelný reporting a účast na klíčových milnících.
+          </div>
+        </details>
+        <details class="acc">
+          <summary class="acc__title">Jak probíhá sdílení dat a IP?</summary>
+          <div class="acc__content">
+            Data a výsledky se sdílejí přes definované rozhraní PMO; IP a licence se sjednávají ve smlouvách (MoU/pozdější dohody).
+          </div>
+        </details>
+        <details class="acc">
+          <summary class="acc__title">Je možné pilot nasadit v městském prostředí?</summary>
+          <div class="acc__content">
+            Ano, po splnění BOZP/EMC a povolovacích procesů; doporučujeme předběžnou bezpečnostní studii a komunikaci s veřejností.
+          </div>
+        </details>
+        <details class="acc">
+          <summary class="acc__title">Jaký je rámcový rozpočet a financování?</summary>
+          <div class="acc__content">
+            Orientačně ~6&nbsp;mil.&nbsp;EUR se spolufinancováním a využitím grantových schémat; detail bude upřesněn po finalizaci konsorcia.
+          </div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section section--cta">
+    <div class="container cta">
+      <h2>Přidejte se do konsorcia</h2>
+      <p>Pošlete LoI, domluvme roli a bezpečnostní rámec. Společně zrychlíme cestu od demonstrátoru k pilotu.</p>
+      <div class="hero__cta">
+        <a class="btn btn--primary" href="#jak-se-pridat">Začít</a>
+        <a class="btn btn--ghost" href="projekty.html">Projekty</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer" role="contentinfo">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <a class="brand brand--footer" href="index.html" aria-label="SSCC domů">
+          <img class="brand__logo" src="assets/logos/sscc-logo-round.svg" alt="SSCC logo"
+               onerror="this.outerHTML='<span class=&quot;brand__text&quot;>SSCC</span>'" />
+        </a>
+        <p class="footer__tag">© <span id="year">2025</span> SSCC — SolarSpace Carbon Cycle</p>
+      </div>
+      <nav class="footer__nav" aria-label="Footer navigace">
+        <ul class="menu menu--footer">
+          <li><a href="index.html">Domů</a></li>
+          <li><a href="projekty.html">Projekty</a></li>
+          <li><a class="is-active" href="konsorcium.html" aria-current="page">Konsorcium</a></li>
+          <li><a href="napady.html">Nápady</a></li>
+          <li><a href="edukace.html">Edukace</a></li>
+        </ul>
+      </nav>
+      <div class="footer__meta">
+        <a href="sitemap.xml" rel="sitemap">Sitemap</a>
+        <span class="dot">•</span>
+        <a href="robots.txt">robots.txt</a>
+      </div>
+    </div>
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </footer>
 </body>
 </html>

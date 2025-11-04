@@ -1,3 +1,78 @@
-<!DOCTYPE html><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>404 | SSCC</title><link rel="stylesheet" href="assets/style.css">
-<body class="container"><h1>404</h1><p>Soubor nenalezen. Zpět na <a href="index.html">Domů</a>.</p>
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Stránka nenalezena (404) | SSCC — SolarSpace Carbon Cycle</title>
+  <meta name="description" content="Požadovaná stránka nebyla nalezena. Pokračujte na domovskou stránku SSCC nebo využijte navigaci." />
+  <meta name="theme-color" content="#0c1219" />
+
+  <!-- Favicons -->
+  <link rel="icon" href="assets/favicons/favicon.ico" />
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-16x16.png" />
+  <link rel="apple-touch-icon" href="assets/favicons/apple-touch-icon.png" />
+  <link rel="manifest" href="assets/favicons/site.webmanifest" />
+
+  <!-- CSS -->
+  <link rel="preload" href="assets/style/style.css?v=1" as="style" />
+  <link rel="stylesheet" href="assets/style/style.css?v=1" />
+</head>
+<body class="site">
+  <a class="skip-link" href="#obsah">Přeskočit na obsah</a>
+
+  <!-- Header -->
+  <header class="header" role="banner" aria-label="Hlavní hlavička">
+    <div class="container header__inner">
+      <a class="brand" href="index.html" aria-label="SSCC domů">
+        <img class="brand__logo" src="assets/logos/sscc-logo-oval.svg" alt="SSCC logo"
+             onerror="this.outerHTML='<span class=&quot;brand__text&quot;>SSCC</span>'" />
+        <span class="brand__tagline">SolarSpace Carbon Cycle</span>
+      </a>
+
+      <nav class="nav" role="navigation" aria-label="Hlavní navigace">
+        <ul class="menu">
+          <li><a href="index.html">Domů</a></li>
+          <li><a href="projekty.html">Projekty</a></li>
+          <li><a href="napady.html">Nápady</a></li>
+          <li><a href="konsorcium.html">Konsorcium</a></li>
+          <li><a href="edukace.html">Edukace</a></li>
+        </ul>
+      </nav>
+
+      <div class="lang">
+        <!-- Volitelné překladové tlačítko (otevře Google Translate EN v nové záložce) -->
+        <a class="lang__btn" href="#" id="translate-btn" aria-label="Přeložit do angličtiny">Translate</a>
+        <span class="lang__sep" aria-hidden="true">/</span>
+        <span class="lang__current" aria-current="true">CS</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero 404 -->
+  <section class="hero hero--compact" id="obsah">
+    <div class="container hero__inner">
+      <div class="hero__copy">
+        <h1>404 — Stránka nenalezena</h1>
+        <p class="lead">
+          Omlouváme se, ale odkaz, který jste otevřeli, neexistuje nebo byl přesunut.
+        </p>
+        <div class="hero__cta">
+          <a class="btn btn--primary" href="index.html">Zpět na domů</a>
+          <a class="btn btn--ghost" href="projekty.html">Projekty</a>
+        </div>
+      </div>
+      <div class="hero__art">
+        <img class="hero__image" src="assets/img/hero-sun.png" alt="Ilustrace SSCC" loading="eager" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Uživatelské tipy -->
+  <section class="section">
+    <div class="container">
+      <h2>Rychlá pomoc</h2>
+      <div class="cards cards--grid-3">
+        <article class="card">
+          <h3>Kontrola adresy</h3>
+          <p>Zkuste zkontrolovat, zda

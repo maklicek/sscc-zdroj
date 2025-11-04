@@ -29,13 +29,12 @@
   <link rel="alternate" hreflang="cs" href="konsorcium.html" />
 
   <!-- CSS (centralizované) -->
-  <link rel="preload" href="assets/style.css?v=1" as="style" />
-  <link rel="stylesheet" href="assets/style.css?v=1" />
+  <link rel="preload" href="assets/style/style.css?v=1" as="style" />
+  <link rel="stylesheet" href="assets/style/style.css?v=1" />
 </head>
 <body class="site">
   <a class="skip-link" href="#obsah">Přeskočit na obsah</a>
 
-  <!-- Header -->
   <header class="header" role="banner" aria-label="Hlavní hlavička">
     <div class="container header__inner">
       <a class="brand" href="index.html" aria-label="SSCC domů">
@@ -62,7 +61,6 @@
     </div>
   </header>
 
-  <!-- Hero -->
   <section class="hero hero--compact" id="obsah">
     <div class="container hero__inner">
       <div class="hero__copy">
@@ -82,7 +80,6 @@
     </div>
   </section>
 
-  <!-- Důvody / Hodnota -->
   <section class="section">
     <div class="container about__grid">
       <div>
@@ -106,7 +103,6 @@
     </div>
   </section>
 
-  <!-- Role & závazky -->
   <section class="section" id="role">
     <div class="container">
       <h2>Role &amp; závazky</h2>
@@ -139,7 +135,6 @@
     </div>
   </section>
 
-  <!-- Governance -->
   <section class="section">
     <div class="container">
       <h2>Governance</h2>
@@ -172,7 +167,6 @@
     </div>
   </section>
 
-  <!-- Jak se přidat -->
   <section class="section" id="jak-se-pridat">
     <div class="container">
       <h2>Jak se přidat</h2>
@@ -203,13 +197,11 @@
     </div>
   </section>
 
-  <!-- Kontaktní formulář -->
   <section class="section">
     <div class="container">
       <h2>Kontakt pro konsorcium</h2>
       <p>Vyplňte formulář, ozveme se s navrženým dalším krokem (call / workshop / NDA).</p>
 
-      <!-- Nahraďte action vlastní endpointem (např. Formspree) -->
       <form class="form" method="post" action="https://formspree.io/f/your-id">
         <div class="form__row form__row--grid">
           <div>
@@ -260,40 +252,6 @@
     </div>
   </section>
 
-  <!-- FAQ -->
-  <section class="section">
-    <div class="container">
-      <h2>FAQ</h2>
-      <div class="accordion" role="tablist">
-        <details class="acc">
-          <summary class="acc__title">Jaké je minimální zapojení partnera?</summary>
-          <div class="acc__content">
-            Minimálně 0.2–0.5 FTE na vybrané WP, pravidelný reporting a účast na klíčových milnících.
-          </div>
-        </details>
-        <details class="acc">
-          <summary class="acc__title">Jak probíhá sdílení dat a IP?</summary>
-          <div class="acc__content">
-            Data a výsledky se sdílejí přes definované rozhraní PMO; IP a licence se sjednávají ve smlouvách (MoU/pozdější dohody).
-          </div>
-        </details>
-        <details class="acc">
-          <summary class="acc__title">Je možné pilot nasadit v městském prostředí?</summary>
-          <div class="acc__content">
-            Ano, po splnění BOZP/EMC a povolovacích procesů; doporučujeme předběžnou bezpečnostní studii a komunikaci s veřejností.
-          </div>
-        </details>
-        <details class="acc">
-          <summary class="acc__title">Jaký je rámcový rozpočet a financování?</summary>
-          <div class="acc__content">
-            Orientačně ~6&nbsp;mil.&nbsp;EUR se spolufinancováním a využitím grantových schémat; detail bude upřesněn po finalizaci konsorcia.
-          </div>
-        </details>
-      </div>
-    </div>
-  </section>
-
-  <!-- CTA -->
   <section class="section section--cta">
     <div class="container cta">
       <h2>Přidejte se do konsorcia</h2>
@@ -305,7 +263,6 @@
     </div>
   </section>
 
-  <!-- Footer -->
   <footer class="footer" role="contentinfo">
     <div class="container footer__inner">
       <div class="footer__brand">
@@ -330,9 +287,7 @@
         <a href="robots.txt">robots.txt</a>
       </div>
     </div>
-    <script>
-      document.getElementById('year').textContent = new Date().getFullYear();
-    </script>
+    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
   </footer>
 </body>
 </html>

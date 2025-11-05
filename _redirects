@@ -1,11 +1,6 @@
-# 1) WWW → bez WWW (trvale)
-https://www.sscc-cockpit.cz/*  https://sscc-cockpit.cz/:splat  301!
+# Primární přesměrování HTTP → HTTPS
+http://* sscc-cockpit.cz https://sscc-cockpit.cz:443 301!
+https://www.sscc-cockpit.cz/* https://sscc-cockpit.cz/:splat 301!
 
-# 2) HTTP → HTTPS (trvale) — obě varianty
-http://sscc-cockpit.cz/*       https://sscc-cockpit.cz/:splat  301!
-http://www.sscc-cockpit.cz/*   https://sscc-cockpit.cz/:splat  301!
-
-# 3) 404 pro vše, co neexistuje
-/*  /404.html  404
-
-
+# Vlastní 404 stránka
+/*    /404.html   404

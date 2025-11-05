@@ -4,46 +4,49 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Nápady | SSCC — SolarSpace Carbon Cycle</title>
+
   <meta name="description" content="Nápady SSCC: otevřený inkubátor návrhů pro zelený NH₃, CCU a bezdrátovou energii. Přispějte a pomozte ověřit technické i ekonomické aspekty." />
   <meta name="keywords" content="SSCC, nápady, inkubátor, green ammonia, CO2 CCU, rectenna, SBSP, inovace" />
   <meta name="theme-color" content="#0c1219" />
 
+  <!-- Open Graph / Twitter -->
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Nápady | SSCC" />
   <meta property="og:description" content="Otevřený inkubátor nápadů pro NH₃, CCU a bezdrátovou energii." />
-  <meta property="og:url" content="https://sscc.cz/napady.html" />
-  <meta property="og:image" content="assets/img/og-cover.png" />
+  <meta property="og:url" content="https://sscc-cockpit.cz/napady.html" />
+  <meta property="og:image" content="/assets/img/hero-sun.jpg" />
   <meta name="twitter:card" content="summary_large_image" />
 
-  <link rel="icon" href="assets/favicons/favicon.ico" />
-  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon-32x32.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-16x16.png" />
-  <link rel="apple-touch-icon" href="assets/favicons/apple-touch-icon.png" />
-  <link rel="manifest" href="assets/favicons/site.webmanifest" />
+  <!-- Favicons -->
+  <link rel="icon" href="/assets/favicons/favicon.ico" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicons/favicon-16x16.png" />
+  <link rel="apple-touch-icon" href="/assets/favicons/apple-touch-icon.png" />
+  <link rel="manifest" href="/assets/favicons/site.webmanifest" />
 
-<link rel="preload" href="/assets/style.css?v=3" as="style">
-<link rel="stylesheet" href="/assets/style.css?v=3">
-
-
+  <!-- CSS -->
+  <link rel="preload" href="/assets/style.css?v=3" as="style" />
+  <link rel="stylesheet" href="/assets/style.css?v=3" />
 </head>
+
 <body class="site">
   <a class="skip-link" href="#obsah">Přeskočit na obsah</a>
 
+  <!-- HLAVIČKA -->
   <header class="header" role="banner" aria-label="Hlavní hlavička">
     <div class="container header__inner">
-      <a class="brand" href="index.html" aria-label="SSCC domů">
-        <img class="brand__logo" src="assets/logos/sscc-logo-oval.svg" alt="SSCC logo"
-             onerror="this.outerHTML='<span class=&quot;brand__text&quot;>SSCC</span>'" />
+      <a class="brand" href="/index.html" aria-label="SSCC domů">
+        <img class="brand__logo" src="/assets/img/sscc-logo.jpg" alt="Logo SSCC" loading="eager" />
         <span class="brand__tagline">SolarSpace Carbon Cycle</span>
       </a>
 
       <nav class="nav" role="navigation" aria-label="Hlavní navigace">
         <ul class="menu">
-          <li><a href="index.html">Domů</a></li>
-          <li><a href="projekty.html">Projekty</a></li>
-          <li><a class="is-active" href="napady.html" aria-current="page">Nápady</a></li>
-          <li><a href="konsorcium.html">Konsorcium</a></li>
-          <li><a href="edukace.html">Edukace</a></li>
+          <li><a href="/index.html">Domů</a></li>
+          <li><a href="/projekty.html">Projekty</a></li>
+          <li><a class="is-active" href="/napady.html" aria-current="page">Nápady</a></li>
+          <li><a href="/konsorcium.html">Konsorcium</a></li>
+          <li><a href="/edukace.html">Edukace</a></li>
         </ul>
       </nav>
 
@@ -53,8 +56,24 @@
     </div>
   </header>
 
-  <!-- Hero + sekce beze změny až po #pridat -->
+  <!-- HERO -->
+  <section class="hero hero--compact" id="obsah">
+    <div class="container hero__inner">
+      <div class="hero__copy">
+        <h1>Nápady SSCC</h1>
+        <p class="lead">
+          Otevřený inkubátor návrhů pro <strong>zelený NH₃</strong>, 
+          <strong>CCU</strong> a <strong>bezdrátovou energii</strong>.  
+          Vaše myšlenky mohou inspirovat další krok vývoje.
+        </p>
+      </div>
+      <div class="hero__art">
+        <img class="hero__image" src="/assets/img/hero-sun.jpg" alt="Sluneční motiv — SSCC" loading="eager" />
+      </div>
+    </div>
+  </section>
 
+  <!-- FORMULÁŘ: Přidat nápad -->
   <section class="section" id="pridat">
     <div class="container">
       <h2>Přidat nápad</h2>
@@ -65,18 +84,22 @@
           <label for="f-name">Jméno / Organizace</label>
           <input id="f-name" name="name" type="text" disabled />
         </div>
+
         <div class="form__row">
           <label for="f-email">E-mail</label>
           <input id="f-email" name="email" type="email" disabled />
         </div>
+
         <div class="form__row">
           <label for="f-title">Název nápadu</label>
           <input id="f-title" name="idea_title" type="text" disabled />
         </div>
+
         <div class="form__row">
           <label for="f-desc">Popis (max. 1200 znaků)</label>
           <textarea id="f-desc" name="idea_desc" rows="5" maxlength="1200" disabled></textarea>
         </div>
+
         <div class="form__row form__row--grid">
           <div>
             <label for="f-potential">Potenciál (stručně)</label>
@@ -87,49 +110,54 @@
             <input id="f-risks" name="idea_risks" type="text" disabled />
           </div>
         </div>
+
         <div class="form__row">
           <label for="f-next">Další krok (co validovat hned teď)</label>
           <input id="f-next" name="idea_next" type="text" disabled />
         </div>
+
         <div class="form__actions">
           <button class="btn btn--primary" type="submit" disabled title="Formulář bude aktivní později">Odeslat</button>
-          <a class="btn btn--ghost" href="konsorcium.html">Chci se zapojit</a>
+          <a class="btn btn--ghost" href="/konsorcium.html">Chci se zapojit</a>
         </div>
       </form>
 
       <div class="note">
-        Tip: Mezitím můžete zaslat návrh do <a href="konsorcium.html">konsorcia</a> (LoI/MoU).
+        Tip: Mezitím můžete zaslat návrh do <a href="/konsorcium.html">konsorcia</a> (LoI/MoU).
       </div>
     </div>
   </section>
 
-  <!-- Zbytek stránky (FAQ/priority/accordion/CTA) beze změn... -->
-
+  <!-- PATIČKA -->
   <footer class="footer" role="contentinfo">
     <div class="container footer__inner">
       <div class="footer__brand">
-        <a class="brand brand--footer" href="index.html" aria-label="SSCC domů">
-          <img class="brand__logo" src="assets/logos/sscc-logo-round.svg" alt="SSCC logo"
-               onerror="this.outerHTML='<span class=&quot;brand__text&quot;>SSCC</span>'" />
+        <a class="brand brand--footer" href="/index.html" aria-label="SSCC domů">
+          <img class="brand__logo" src="/assets/img/sscc-logo.jpg" alt="Logo SSCC" loading="lazy" />
         </a>
         <p class="footer__tag">© <span id="year">2025</span> SSCC — SolarSpace Carbon Cycle</p>
       </div>
-      <nav class="footer__nav" aria-label="Footer navigace">
+
+      <nav class="footer__nav" aria-label="Spodní navigace">
         <ul class="menu menu--footer">
-          <li><a href="index.html">Domů</a></li>
-          <li><a href="projekty.html">Projekty</a></li>
-          <li><a class="is-active" href="napady.html" aria-current="page">Nápady</a></li>
-          <li><a href="konsorcium.html">Konsorcium</a></li>
-          <li><a href="edukace.html">Edukace</a></li>
+          <li><a href="/index.html">Domů</a></li>
+          <li><a href="/projekty.html">Projekty</a></li>
+          <li><a class="is-active" href="/napady.html" aria-current="page">Nápady</a></li>
+          <li><a href="/konsorcium.html">Konsorcium</a></li>
+          <li><a href="/edukace.html">Edukace</a></li>
+          <li><a href="/spoluprace.html">Spolupráce</a></li>
         </ul>
       </nav>
+
       <div class="footer__meta">
-        <a href="sitemap.xml" rel="sitemap">Sitemap</a>
+        <a href="/sitemap.xml" rel="sitemap">Sitemap</a>
         <span class="dot">•</span>
-        <a href="robots.txt">robots.txt</a>
+        <a href="/robots.txt">robots.txt</a>
       </div>
     </div>
-    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
   </footer>
 </body>
 </html>

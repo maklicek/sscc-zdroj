@@ -4,57 +4,77 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Spolupráce | SSCC — SolarSpace Carbon Cycle</title>
-  <meta name="description" content="Spolupráce se SSCC: věda, průmysl a investoři. Zapojte se do zelené NH₃ smyčky, CCU a bezdrátové energie.">
 
-  <!-- Favicons (pokud máš v /assets/favicons) -->
-  <link rel="icon" href="/assets/favicons/favicon.ico">
-  <link rel="apple-touch-icon" href="/assets/favicons/apple-touch-icon.png">
+  <meta name="description" content="Spolupráce se SSCC: věda, průmysl a investoři. Zapojte se do zelené NH₃ smyčky, CCU a bezdrátové energie." />
+  <meta name="keywords" content="SSCC, spolupráce, NH3, CO2, CCU, rectenna, průmysl, výzkum, investice" />
+  <meta name="theme-color" content="#0c1219" />
 
-  <!-- CSS (root-absolutní cesty + cache-buster) -->
-<link rel="preload" href="/assets/style.css?v=3" as="style">
-<link rel="stylesheet" href="/assets/style.css?v=3">
+  <!-- Open Graph / Twitter -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Spolupráce | SSCC" />
+  <meta property="og:description" content="Zapojte se do spolupráce s SSCC: věda, průmysl, investoři." />
+  <meta property="og:url" content="https://sscc-cockpit.cz/spoluprace.html" />
+  <meta property="og:image" content="/assets/img/hero-sun.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
 
+  <!-- Favicons -->
+  <link rel="icon" href="/assets/favicons/favicon.ico" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicons/favicon-16x16.png" />
+  <link rel="apple-touch-icon" href="/assets/favicons/apple-touch-icon.png" />
+  <link rel="manifest" href="/assets/favicons/site.webmanifest" />
+
+  <!-- CSS -->
+  <link rel="preload" href="/assets/style.css?v=3" as="style" />
+  <link rel="stylesheet" href="/assets/style.css?v=3" />
 </head>
+
 <body class="site">
+  <a class="skip-link" href="#obsah">Přeskočit na obsah</a>
 
   <!-- HLAVIČKA -->
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="brand-combo" href="/index.html" aria-label="SSCC domů">
-        <div class="logo-frame">
-          <img class="main-logo" src="/assets/img/logo-sscc.png" alt="SSCC logo">
-        </div>
-        <div class="brand-block">
-          <div class="brand-name">SSCC</div>
-          <div class="brand-tagline">SolarSpace Carbon Cycle</div>
-        </div>
+  <header class="header" role="banner" aria-label="Hlavní hlavička">
+    <div class="container header__inner">
+      <a class="brand" href="/index.html" aria-label="SSCC domů">
+        <img class="brand__logo" src="/assets/img/sscc-logo.jpg" alt="Logo SSCC" loading="eager" />
+        <span class="brand__tagline">SolarSpace Carbon Cycle</span>
       </a>
 
-      <nav class="site-nav" aria-label="Hlavní navigace">
+      <nav class="nav" role="navigation" aria-label="Hlavní navigace">
         <ul class="menu">
           <li><a href="/index.html">Domů</a></li>
           <li><a href="/projekty.html">Projekty</a></li>
           <li><a href="/napady.html">Nápady</a></li>
           <li><a href="/konsorcium.html">Konsorcium</a></li>
           <li><a href="/edukace.html">Edukace</a></li>
-          <li><a class="active" aria-current="page" href="/spoluprace.html">Spolupráce</a></li>
+          <li><a class="is-active" href="/spoluprace.html" aria-current="page">Spolupráce</a></li>
         </ul>
       </nav>
+
+      <div class="lang">
+        <span class="lang__current" aria-current="true">CS</span>
+      </div>
     </div>
   </header>
 
-  <main class="container">
-    <section class="hero">
-      <div>
+  <!-- HERO -->
+  <section class="hero" id="obsah">
+    <div class="container hero__inner">
+      <div class="hero__copy">
         <h1>Spolupráce &amp; zapojení do SSCC</h1>
-        <p class="lead">SSCC je otevřená platforma — krok za krokem stavíme funkční řešení, nápady a piloty s jasnou ekonomikou.</p>
+        <p class="lead">
+          SSCC je otevřená platforma – krok za krokem stavíme funkční řešení, nápady a piloty s jasnou ekonomikou.
+        </p>
       </div>
-      <div class="card hidden" id="hero-img" aria-hidden="true">
-        <!-- prostor pro pozdější hero image -->
+      <div class="hero__art">
+        <img class="hero__image" src="/assets/img/hero-sun.jpg" alt="Sluneční energie – symbol spolupráce SSCC" loading="eager" />
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="card-grid">
+  <!-- HLAVNÍ OBSAH -->
+  <main class="section">
+    <div class="container card-grid">
       <div class="card">
         <h3>Věda</h3>
         <p>Modelování, simulace, laboratorní testy (CO₂ / H₂ / NH₃).</p>
@@ -67,34 +87,48 @@
         <h3>Investoři</h3>
         <p>Jednotky s jasnou ekonomikou a návratností.</p>
       </div>
-    </section>
+    </div>
 
-    <section class="cta">
-      <h3>Chcete se zapojit?</h3>
+    <div class="container cta">
+      <h2>Chcete se zapojit?</h2>
       <p>Napište, do které oblasti spadáte a jaký typ spolupráce hledáte.</p>
-      <a class="btn" href="mailto:martin.klic46@gmail.com">📩 Požádat o spolupráci</a>
-    </section>
+      <a class="btn btn--primary" href="mailto:martin.klic46@gmail.com">📩 Požádat o spolupráci</a>
+    </div>
   </main>
 
   <!-- PATIČKA -->
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <div class="footer-left">
-        © 2025 <strong>SolarSpace Carbon Cycle (SSCC)</strong> ·
-        Navrhl a spravuje SSCC Consortium · Powered by clean energy ✶
+  <footer class="footer" role="contentinfo">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <a class="brand brand--footer" href="/index.html" aria-label="SSCC domů">
+          <img class="brand__logo" src="/assets/img/sscc-logo.jpg" alt="Logo SSCC" loading="lazy" />
+        </a>
+        <p class="footer__tag">© <span id="year">2025</span> SSCC — SolarSpace Carbon Cycle</p>
       </div>
 
-      <nav class="footer-links" aria-label="Spodní navigace">
-        <a href="/projekty.html">Projekty</a> ·
-        <a href="/edukace.html">Edukace</a> ·
-        <a href="/napady.html">Nápady</a> ·
-        <a href="/konsorcium.html">Konsorcium</a> ·
-        <a href="/spoluprace.html" aria-current="page">Spolupráce</a>
+      <nav class="footer__nav" aria-label="Spodní navigace">
+        <ul class="menu menu--footer">
+          <li><a href="/index.html">Domů</a></li>
+          <li><a href="/projekty.html">Projekty</a></li>
+          <li><a href="/napady.html">Nápady</a></li>
+          <li><a href="/konsorcium.html">Konsorcium</a></li>
+          <li><a href="/edukace.html">Edukace</a></li>
+          <li><a class="is-active" href="/spoluprace.html" aria-current="page">Spolupráce</a></li>
+        </ul>
       </nav>
+
+      <div class="footer__meta">
+        <a href="/sitemap.xml" rel="sitemap">Sitemap</a>
+        <span class="dot">•</span>
+        <a href="/robots.txt">robots.txt</a>
+      </div>
     </div>
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
   </footer>
 
-  <!-- JS: v repu máš `main.js` v kořeni -->
+  <!-- JS -->
   <script src="/main.js"></script>
 </body>
 </html>

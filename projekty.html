@@ -8,41 +8,44 @@
   <meta name="keywords" content="SSCC, projekty, zelený amoniak, CO2, CCU, rectenna, SBSP, pilotní jednotka, roadmap" />
   <meta name="theme-color" content="#0c1219" />
 
+  <!-- Open Graph / Twitter -->
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Projekty | SSCC" />
   <meta property="og:description" content="Přehled projektů od demonstrátoru po 10 MW systémy: NH₃, CCU a bezdrátová energie." />
-  <meta property="og:url" content="https://sscc.cz/projekty.html" />
-  <meta property="og:image" content="assets/img/og-cover.png" />
+  <meta property="og:url" content="https://sscc-cockpit.cz/projekty.html" />
+  <meta property="og:image" content="/assets/img/hero-sun.jpg" />
   <meta name="twitter:card" content="summary_large_image" />
 
-  <link rel="icon" href="assets/favicons/favicon.ico" />
-  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon-32x32.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-16x16.png" />
-  <link rel="apple-touch-icon" href="assets/favicons/apple-touch-icon.png" />
-  <link rel="manifest" href="assets/favicons/site.webmanifest" />
+  <!-- Favicons -->
+  <link rel="icon" href="/assets/favicons/favicon.ico" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicons/favicon-16x16.png" />
+  <link rel="apple-touch-icon" href="/assets/favicons/apple-touch-icon.png" />
+  <link rel="manifest" href="/assets/favicons/site.webmanifest" />
 
-<link rel="preload" href="/assets/style.css?v=3" as="style">
-<link rel="stylesheet" href="/assets/style.css?v=3">
-
+  <!-- CSS -->
+  <link rel="preload" href="/assets/style.css?v=3" as="style" />
+  <link rel="stylesheet" href="/assets/style.css?v=3" />
 </head>
+
 <body class="site">
   <a class="skip-link" href="#obsah">Přeskočit na obsah</a>
 
+  <!-- HLAVIČKA -->
   <header class="header" role="banner" aria-label="Hlavní hlavička">
     <div class="container header__inner">
-      <a class="brand" href="index.html" aria-label="SSCC domů">
-        <a class="btn btn--primary" href="projekty/novy-projekt.html">Detail</a>
-        <img class="brand__logo" src="assets/logos/sscc-logo-oval.svg" alt="SSCC logo" onerror="this.outerHTML='<span class=&quot;brand__text&quot;>SSCC</span>'" />
+      <a class="brand" href="/index.html" aria-label="SSCC domů">
+        <img class="brand__logo" src="/assets/img/sscc-logo.jpg" alt="Logo SSCC" loading="eager" />
         <span class="brand__tagline">SolarSpace Carbon Cycle</span>
       </a>
 
       <nav class="nav" role="navigation" aria-label="Hlavní navigace">
         <ul class="menu">
-          <li><a href="index.html">Domů</a></li>
-          <li><a class="is-active" href="projekty.html" aria-current="page">Projekty</a></li>
-          <li><a href="napady.html">Nápady</a></li>
-          <li><a href="konsorcium.html">Konsorcium</a></li>
-          <li><a href="edukace.html">Edukace</a></li>
+          <li><a href="/index.html">Domů</a></li>
+          <li><a class="is-active" href="/projekty.html" aria-current="page">Projekty</a></li>
+          <li><a href="/napady.html">Nápady</a></li>
+          <li><a href="/konsorcium.html">Konsorcium</a></li>
+          <li><a href="/edukace.html">Edukace</a></li>
         </ul>
       </nav>
 
@@ -52,64 +55,86 @@
     </div>
   </header>
 
-  <!-- Hero + obsah beze změny -->
+  <!-- HERO -->
   <section class="hero hero--compact" id="obsah">
     <div class="container hero__inner">
       <div class="hero__copy">
         <h1>Projekty SSCC</h1>
         <p class="lead">
-          Od <strong>demonstrátoru</strong> přes <strong>pilotní jednotku</strong> až po <strong>škálování 10&nbsp;MW</strong>. 
-          Integrovaný vývoj: NH₃ smyčka, CCU modul a bezdrátová energie (rectenna).
+          Od <strong>demonstrátoru</strong> přes <strong>pilotní jednotku</strong> až po 
+          <strong>škálování 10&nbsp;MW</strong>. Integrovaný vývoj: NH₃ smyčka, CCU modul a bezdrátová energie (rectenna).
         </p>
         <div class="hero__cta">
           <a class="btn btn--primary" href="#prehled">Přejít na přehled</a>
-          <a class="btn btn--ghost" href="konsorcium.html">Zapojit se do konsorcia</a>
+          <a class="btn btn--ghost" href="/konsorcium.html">Zapojit se do konsorcia</a>
         </div>
       </div>
       <div class="hero__art">
-        <img class="hero__image" src="assets/img/cyclus-sscc.png" alt="Schéma cyklu SSCC" loading="eager" />
+        <img class="hero__image" src="/assets/img/cyclus-sscc.png" alt="Schéma cyklu SSCC" loading="eager" />
       </div>
     </div>
   </section>
 
-  <!-- Přehled, milníky, WP, CTA – beze změn (viz tvá verze) -->
-  <!-- ... (ponecháno identické jako v předchozí schválené podobě) ... -->
+  <!-- OBSAH PROJEKTŮ -->
+  <main id="prehled" class="section section--projects container">
+    <article class="card">
+      <h2>1. Demonstrátor</h2>
+      <p>Malý laboratorní systém pro ověření koncepce CO₂ zachytu a syntézy NH₃ s mikrovlnnou energií.</p>
+    </article>
 
+    <article class="card">
+      <h2>2. Pilotní jednotka</h2>
+      <p>Integrovaný systém s výkonem 250&nbsp;kW — verifikace účinnosti, bezpečnosti a stability provozu.</p>
+    </article>
+
+    <article class="card">
+      <h2>3. Škálování 10&nbsp;MW</h2>
+      <p>Rozšířená konfigurace s plnou rekuperací tepla a modulární integrací CCU a NH₃ smyček.</p>
+    </article>
+  </main>
+
+  <!-- CTA -->
   <section class="section section--cta">
     <div class="container cta">
       <h2>Přidejte se k vývoji</h2>
       <p>Hledáme partnery z akademie i průmyslu: výpočty, prototypy, provoz pilotu a bezpečnost.</p>
       <div class="hero__cta">
-        <a class="btn btn--primary" href="konsorcium.html">Konsorcium</a>
-        <a class="btn btn--ghost" href="edukace.html">Edukace</a>
+        <a class="btn btn--primary" href="/konsorcium.html">Konsorcium</a>
+        <a class="btn btn--ghost" href="/edukace.html">Edukace</a>
       </div>
     </div>
   </section>
 
+  <!-- PATIČKA -->
   <footer class="footer" role="contentinfo">
     <div class="container footer__inner">
       <div class="footer__brand">
-        <a class="brand brand--footer" href="index.html" aria-label="SSCC domů">
-          <img class="brand__logo" src="assets/logos/sscc-logo-round.svg" alt="SSCC logo" onerror="this.outerHTML='<span class=&quot;brand__text&quot;>SSCC</span>'" />
+        <a class="brand brand--footer" href="/index.html" aria-label="SSCC domů">
+          <img class="brand__logo" src="/assets/img/sscc-logo.jpg" alt="Logo SSCC" loading="lazy" />
         </a>
         <p class="footer__tag">© <span id="year">2025</span> SSCC — SolarSpace Carbon Cycle</p>
       </div>
-      <nav class="footer__nav" aria-label="Footer navigace">
+
+      <nav class="footer__nav" aria-label="Spodní navigace">
         <ul class="menu menu--footer">
-          <li><a href="index.html">Domů</a></li>
-          <li><a class="is-active" href="projekty.html" aria-current="page">Projekty</a></li>
-          <li><a href="napady.html">Nápady</a></li>
-          <li><a href="konsorcium.html">Konsorcium</a></li>
-          <li><a href="edukace.html">Edukace</a></li>
+          <li><a href="/index.html">Domů</a></li>
+          <li><a class="is-active" href="/projekty.html" aria-current="page">Projekty</a></li>
+          <li><a href="/napady.html">Nápady</a></li>
+          <li><a href="/konsorcium.html">Konsorcium</a></li>
+          <li><a href="/edukace.html">Edukace</a></li>
+          <li><a href="/spoluprace.html">Spolupráce</a></li>
         </ul>
       </nav>
+
       <div class="footer__meta">
-        <a href="sitemap.xml" rel="sitemap">Sitemap</a>
+        <a href="/sitemap.xml" rel="sitemap">Sitemap</a>
         <span class="dot">•</span>
-        <a href="robots.txt">robots.txt</a>
+        <a href="/robots.txt">robots.txt</a>
       </div>
     </div>
-    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
   </footer>
 </body>
 </html>

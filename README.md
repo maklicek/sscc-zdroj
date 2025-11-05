@@ -1,3 +1,22 @@
+# SSCC Web — Deploy Manual (Netlify, static only)
+
+Tento web **nepoužívá žádný build proces** (žádné React, Vue, npm ani CI).  
+Je to čistý statický web (HTML + CSS + assets).
+
+---
+
+## 🧭 Základní princip
+- **Repozitář na GitHubu je odpojený** — Netlify už neprovádí buildy.  
+- **Netlify slouží pouze k hostování** statického obsahu.  
+- Vše se nasazuje **ručně (Drag & Drop)**.  
+- Žádné build minutes se neodečítají.
+
+---
+
+## 🚀 Jak nasadit novou verzi
+
+1. Připrav novou verzi webu (např. aktualizovaný ZIP z `sscc-cockpit-v1.1` nebo novější).  
+2. Rozbal ZIP — uvidíš:
 
 # SSCC — Clean Starter
 

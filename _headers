@@ -3,25 +3,19 @@
   Referrer-Policy: strict-origin-when-cross-origin
   Permissions-Policy: geolocation=(), microphone=(), camera=()
   X-Frame-Options: DENY
+  Cache-Control: no-cache
 
 /assets/style/*
   Cache-Control: public, max-age=31536000, immutable
 
 /assets/img/*
-  Cache-Control: public, max-age=31536000
-
-/assets/logos/*
-  Cache-Control: public, max-age=31536000
+  Cache-Control: public, max-age=31536000, immutable
 
 /assets/favicons/*
-  Cache-Control: public, max-age=31536000
+  Cache-Control: public, max-age=31536000, immutable
+
+/assets/logos/*
+  Cache-Control: public, max-age=31536000, immutable
 
 /assets/docs/*
   Cache-Control: public, max-age=86400
-
-/*
-  X-Content-Type-Options: nosniff
-  Referrer-Policy: strict-origin-when-cross-origin
-  Permissions-Policy: geolocation=(), microphone=(), camera=()
-  X-Frame-Options: DENY
-  Strict-Transport-Security: max-age=31536000; includeSubDomains; preload

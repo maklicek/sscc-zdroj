@@ -3,159 +3,62 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Konsorcium | SSCC — SolarSpace Carbon Cycle</title>
-
-  <meta name="description" content="SSCC konsorcium: akademie × průmysl × veřejný sektor. Role, závazky, jak se přidat, governance, dokumenty (MoU/LoI)." />
-  <meta name="keywords" content="SSCC, konsorcium, partnerství, MoU, LoI, akademie, průmysl, veřejný sektor" />
-  <meta name="theme-color" content="#0c1219" />
-
-  <!-- Open Graph / Twitter -->
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="Konsorcium | SSCC" />
-  <meta property="og:description" content="Zapojte se do konsorcia: role, závazky, governance a kroky k přistoupení." />
-  <meta property="og:url" content="https://sscc-cockpit.cz/konsorcium.html" />
-  <meta property="og:image" content="/assets/img/hero-sun.jpg" />
-  <meta name="twitter:card" content="summary_large_image" />
-
-  <!-- Favicons -->
-  <link rel="icon" href="/assets/favicons/favicon.ico" />
-  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicons/favicon-16x16.png" />
-  <link rel="apple-touch-icon" href="/assets/favicons/apple-touch-icon.png" />
-  <link rel="manifest" href="/assets/favicons/site.webmanifest" />
-
-  <!-- CSS -->
-<link rel="preload" href="/assets/style.css?v=4" as="style">
-<link rel="stylesheet" href="/assets/style.css?v=4">
-
+  <title>Konsorcium | SSCC</title>
+  <meta name="description" content="SolarSpace Carbon Cycle — inspirativní studnice nápadů a spoluprací.">
+  <link rel="icon" href="assets/img/favicon.png">
+  <link rel="preload" href="assets/style.css" as="style">
+  <link rel="stylesheet" href="assets/style.css">
 </head>
-
-<body class="site">
-  <a class="skip-link" href="#obsah">Přeskočit na obsah</a>
-
-  <!-- HLAVIČKA -->
-  <header class="header" role="banner" aria-label="Hlavní hlavička">
-    <div class="container header__inner">
-      <a class="brand" href="/index.html" aria-label="SSCC domů">
-        <img class="brand__logo" src="/assets/img/sscc-logo.jpg" alt="Logo SSCC" loading="eager">
-        <span class="brand__tagline">SolarSpace Carbon Cycle</span>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Domů">
+        <span class="mark" aria-hidden="true"></span>
+        <span class="title">
+          <span class="name">SSCC</span>
+          <span class="tag">SolarSpace Carbon Cycle</span>
+        </span>
       </a>
-
-      <nav class="nav" role="navigation" aria-label="Hlavní navigace">
-        <ul class="menu">
-          <li><a href="/index.html">Domů</a></li>
-          <li><a href="/projekty.html">Projekty</a></li>
-          <li><a href="/napady.html">Nápady</a></li>
-          <li><a class="is-active" href="/konsorcium.html" aria-current="page">Konsorcium</a></li>
-          <li><a href="/edukace.html">Edukace</a></li>
-        </ul>
+      <nav class="nav" aria-label="Primární">
+        <a href="index.html">Domů</a>
+        <a href="projekty.html">Projekty</a>
+        <a href="napady.html">Nápady</a>
+        <a href="spoluprace.html">Spolupráce</a>
+        <a href="edukace.html">Edukace</a>
+        <a href="konsorcium.html">Konsorcium</a>
+        <a class="lang" href="#" title="EN (zatím auto‑překlad)">EN</a>
       </nav>
-
-      <div class="lang">
-        <span class="lang__current" aria-current="true">CS</span>
-      </div>
     </div>
   </header>
 
-  <!-- HERO -->
-  <section class="hero hero--compact" id="obsah">
-    <div class="container hero__inner">
-      <div class="hero__copy">
-        <h1>Konsorcium SSCC</h1>
-        <p class="lead">
-          Partnerství <strong>akademie × průmysl × veřejný sektor</strong> — pro vývoj decentralizované
-          syntézy zeleného NH₃, CCU a bezdrátové energie. Přidejte se k nám!
-        </p>
+  <main class="container">
+    <section class="hero">
+      <div>
+        <h1>Konsorcium</h1>
+        <p class="lead">SSCC je otevřená platforma — krok za krokem stavíme funkční řešení, nápady a piloty s jasnou ekonomikou.</p>
       </div>
-      <div class="hero__art">
-        <img class="hero__image" src="/assets/img/ostrava.jpg" alt="Ostrava — průmyslový region SSCC" loading="eager">
+      <div class="card hidden" id="hero-img" aria-hidden="true">
+        <!-- prostor pro pozdější hero image -->
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- FORMULÁŘ -->
-  <section class="section">
-    <div class="container">
-      <h2>Kontakt pro konsorcium</h2>
-      <p>Formulář zatím není aktivní. Pro náhled ponechán níže – aktivujeme později.</p>
+    
+<section class="card-grid">
+  <div class="card"><h3>Členové</h3><p>Přehled partnerů a rolí — brzy.</p></div>
+  <div class="card"><h3>Materiály</h3><p>Abstrakty, NDA, technické listy (privátní sekce) — brzy.</p></div>
+  <div class="card"><h3>Piloty &amp; testování</h3><p>Možnosti zapojení do reálného provozu — brzy.</p></div>
+</section>
 
-      <form class="form" method="post" action="#" novalidate>
-        <div class="form__row form__row--grid">
-          <div>
-            <label for="f-org">Organizace</label>
-            <input id="f-org" name="organization" type="text" disabled />
-          </div>
-          <div>
-            <label for="f-role">Preferovaná role</label>
-            <select id="f-role" name="role" disabled>
-              <option value="">— vyberte —</option>
-              <option>Akademie</option>
-              <option>Průmysl</option>
-              <option>Veřejný sektor</option>
-              <option>Jiné</option>
-            </select>
-          </div>
-        </div>
+  </main>
 
-        <div class="form__row form__row--grid">
-          <div>
-            <label for="f-name">Kontaktní osoba</label>
-            <input id="f-name" name="name" type="text" disabled />
-          </div>
-          <div>
-            <label for="f-email">E-mail</label>
-            <input id="f-email" name="email" type="email" disabled />
-          </div>
-        </div>
-
-        <div class="form__row">
-          <label for="f-cap">Kompetence a kapacity (stručně)</label>
-          <textarea id="f-cap" name="capabilities" rows="4" maxlength="1000" disabled></textarea>
-        </div>
-
-        <div class="form__row">
-          <label for="f-wp">Zájmové WP / témata</label>
-          <input id="f-wp" name="workpackages" type="text" placeholder="např. WP3 Rectenna, WP4 NH₃" disabled />
-        </div>
-
-        <div class="form__actions">
-          <button class="btn btn--primary" type="submit" disabled title="Formulář bude aktivní později">Odeslat zájem</button>
-          <a class="btn btn--ghost" href="/edukace.html">Podklady &amp; edukace</a>
-        </div>
-      </form>
-    </div>
-  </section>
-
-  <!-- PATIČKA -->
-  <footer class="footer" role="contentinfo">
-    <div class="container footer__inner">
-      <div class="footer__brand">
-        <a class="brand brand--footer" href="/index.html" aria-label="SSCC domů">
-          <img class="brand__logo" src="/assets/img/sscc-logo.jpg" alt="Logo SSCC" loading="lazy" />
-        </a>
-        <p class="footer__tag">© <span id="year">2025</span> SSCC — SolarSpace Carbon Cycle</p>
-      </div>
-
-      <nav class="footer__nav" aria-label="Spodní navigace">
-        <ul class="menu menu--footer">
-          <li><a href="/index.html">Domů</a></li>
-          <li><a href="/projekty.html">Projekty</a></li>
-          <li><a href="/napady.html">Nápady</a></li>
-          <li><a class="is-active" href="/konsorcium.html" aria-current="page">Konsorcium</a></li>
-          <li><a href="/edukace.html">Edukace</a></li>
-          <li><a href="/spoluprace.html">Spolupráce</a></li>
-        </ul>
-      </nav>
-
-      <div class="footer__meta">
-        <a href="/sitemap.xml" rel="sitemap">Sitemap</a>
-        <span class="dot">•</span>
-        <a href="/robots.txt">robots.txt</a>
+  <footer class="site-footer">
+    <div class="container footer-flex">
+      <div>© 2025 SSCC — SolarSpace Carbon Cycle</div>
+      <div>
+        <a href="sitemap.xml">Sitemap</a> · <a href="robots.txt">robots.txt</a> · <a href="404.html">404</a>
       </div>
     </div>
-    <script>
-      document.getElementById('year').textContent = new Date().getFullYear();
-    </script>
   </footer>
+  <script src="assets/js/main.js"></script>
 </body>
 </html>

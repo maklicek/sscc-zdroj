@@ -1,4 +1,3 @@
 User-agent: *
 Allow: /
-
-Sitemap: https://sscc-cockpit.cz/sitemap.xml
+Sitemap: https://example.github.io/sitemap.xml

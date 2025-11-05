@@ -7,3 +7,11 @@
   <url><loc>https://example.github.io/edukace.html</loc></url>
   <url><loc>https://example.github.io/konsorcium.html</loc></url>
 </urlset>
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://sscc-cockpit.cz/</loc></url>
+  <url><loc>https://sscc-cockpit.cz/projekty.html</loc></url>
+  <url><loc>https://sscc-cockpit.cz/edukace.html</loc></url>
+  <url><loc>https://sscc-cockpit.cz/konsorcium.html</loc></url>
+  <url><loc>https://sscc-cockpit.cz/spoluprace.html</loc></url>
+</urlset>

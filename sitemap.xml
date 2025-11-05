@@ -1,33 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://sscc.cz/</loc>
-    <lastmod>2025-11-04</lastmod>
-    <priority>1.0</priority>
+    <loc>https://sscc-cockpit.cz/</loc>
   </url>
   <url>
-    <loc>https://sscc.cz/index.html</loc>
-    <lastmod>2025-11-04</lastmod>
-    <priority>0.9</priority>
+    <loc>https://sscc-cockpit.cz/projekty.html</loc>
   </url>
   <url>
-    <loc>https://sscc.cz/projekty.html</loc>
-    <lastmod>2025-11-04</lastmod>
-    <priority>0.8</priority>
+    <loc>https://sscc-cockpit.cz/napady.html</loc>
   </url>
   <url>
-    <loc>https://sscc.cz/napady.html</loc>
-    <lastmod>2025-11-04</lastmod>
-    <priority>0.8</priority>
+    <loc>https://sscc-cockpit.cz/konsorcium.html</loc>
   </url>
   <url>
-    <loc>https://sscc.cz/konsorcium.html</loc>
-    <lastmod>2025-11-04</lastmod>
-    <priority>0.8</priority>
+    <loc>https://sscc-cockpit.cz/edukace.html</loc>
   </url>
   <url>
-    <loc>https://sscc.cz/edukace.html</loc>
-    <lastmod>2025-11-04</lastmod>
-    <priority>0.7</priority>
+    <loc>https://sscc-cockpit.cz/spoluprace.html</loc>
   </url>
 </urlset>

@@ -1,77 +1,40 @@
 <!DOCTYPE html>
 <html lang="cs">
 <head>
-<link rel="icon" href="assets/favicons/favicon.ico">
-<link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-16x16.png">
-<link rel="apple-touch-icon" href="assets/favicons/apple-touch-icon.png">
-<link rel="stylesheet" href="assets/style.css?v=1.1">
-<link rel="canonical" href="https://sscc-cockpit.cz/">
-<meta property="og:title" content="SSCC — SolarSpace Carbon Cycle">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://sscc-cockpit.cz/">
-<meta property="og:image" content="https://sscc-cockpit.cz/assets/img/logo-sscc.svg">
-<meta name="theme-color" content="#0c1219">
-
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Spolupráce | SSCC — SolarSpace Carbon Cycle</title>
+  <meta name="description" content="Jak se zapojit: průmysl, akademie, freelance, studenti.">
+  <link rel="preload" href="assets/style.css?v=1" as="style">
+  <link rel="stylesheet" href="assets/style.css?v=1">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
 </head>
 <body>
-<header class="site-header">
-  <div class="container header-inner">
-    <a class="brand" href="index.html" aria-label="SSCC – domů">
-      <img src="assets/img/logo-sscc.svg" alt="SSCC logo" />
-      <span>SSCC</span>
-    </a>
-    <nav class="main-nav" aria-label="Hlavní navigace">
-      <a href="projekty.html">Projekty</a>
-      <a href="edukace.html">Edukace</a>
-      <a href="konsorcium.html">Konsorcium</a>
-      <a href="spoluprace.html">Spolupráce</a>
-    </nav>
-  </div>
-</header>
+  <header class="site-header">
+    <div class="brand">
+      <img src="assets/sscc-logo.jpg" alt="SSCC logo" class="logo" />
+      <h1 class="title">SolarSpace Carbon Cycle</h1>
+    </div>
+  </header>
 
+  <nav class="nav">
+      <a href="index.html" class="">Domů</a>
+      <a href="edukace.html" class="">Edukace</a>
+      <a href="projekty.html" class="">Projekty</a>
+      <a href="napady.html" class="">Nápady</a>
+      <a href="konsorcium.html" class="">Konsorcium</a>
+      <a href="spoluprace.html" class="active">Spolupráce</a>
+  </nav>
 
   <main class="container">
-    <section class="hero">
-      <div>
-        <h1>Spolupráce & zapojení do SSCC</h1>
-        <p class="lead">SSCC je otevřená platforma — krok za krokem stavíme funkční řešení, nápady a piloty s jasnou ekonomikou.</p>
-      </div>
-      <div class="card hidden" id="hero-img" aria-hidden="true">
-        <!-- prostor pro pozdější hero image -->
-      </div>
-    </section>
-
-    
-<section class="card-grid">
-  <div class="card">
-    <h3>Věda</h3>
-    <p>Modelování, simulace, laboratorní testy (CO₂ / H₂ / NH₃).</p>
-  </div>
-  <div class="card">
-    <h3>Průmysl</h3>
-    <p>Výroba komponent, integrace, pilotní provoz.</p>
-  </div>
-  <div class="card">
-    <h3>Investoři</h3>
-    <p>Jednotky s jasnou ekonomikou a návratností.</p>
-  </div>
-</section>
-<section class="cta">
-  <h3>Chcete se zapojit?</h3>
-  <p>Napište, do které oblasti spadáte a jaký typ spolupráce hledáte.</p>
-  <a class="btn" href="mailto:martin.klic46@gmail.com">📩 Požádat o spolupráci</a>
-</section>
-
+    <h2>Spolupráce</h2>
+    <p>Jak se zapojit: průmysl, akademie, freelance, studenti.</p>
   </main>
 
-<footer class="site-footer">
-  <div class="container footer-inner">
-    <p>© 2025 SSCC — SolarSpace Carbon Cycle</p>
-    <p class="muted"><a href="sitemap.html">Sitemap</a> · <a href="robots.txt">robots.txt</a> · <a href="404.html">404</a></p>
-  </div>
-</footer>
+  <footer class="site-footer">
+    <small>© <span id="year"></span> SSCC — SolarSpace Carbon Cycle</small>
+  </footer>
 
-  <script src="assets/js/main.js"></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>

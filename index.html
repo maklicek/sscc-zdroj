@@ -3,11 +3,10 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>SSCC — SolarSpace Carbon Cycle</title>
-  <meta name="description" content="SolarSpace Carbon Cycle — inspirativní studnice nápadů a spoluprací.">
+  <title>Domů | SSCC — SolarSpace Carbon Cycle</title>
+  <meta name="description" content="Vítej na startovní stránce SSCC.">
   <link rel="preload" href="assets/style.css?v=1" as="style">
   <link rel="stylesheet" href="assets/style.css?v=1">
-  <!-- Inter font -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -18,16 +17,24 @@
     </div>
   </header>
 
-  <main class="content">
-    <p>Tento balíček je připravený k nasazení (čistý HTML/CSS). Pokud chceš použít své skutečné logo, nahraď soubor <code>assets/sscc-logo.jpg</code> svým JPG bez změny názvu.</p>
+  <nav class="nav">
+      <a href="index.html" class="active">Domů</a>
+      <a href="edukace.html" class="">Edukace</a>
+      <a href="projekty.html" class="">Projekty</a>
+      <a href="napady.html" class="">Nápady</a>
+      <a href="konsorcium.html" class="">Konsorcium</a>
+      <a href="spoluprace.html" class="">Spolupráce</a>
+  </nav>
+
+  <main class="container">
+    <h2>Domů</h2>
+    <p>Vítej na startovní stránce SSCC.</p>
   </main>
 
   <footer class="site-footer">
     <small>© <span id="year"></span> SSCC — SolarSpace Carbon Cycle</small>
   </footer>
 
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>

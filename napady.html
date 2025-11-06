@@ -1,74 +1,40 @@
 <!DOCTYPE html>
 <html lang="cs">
 <head>
-<link rel="icon" href="assets/favicons/favicon.ico">
-<link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-16x16.png">
-<link rel="apple-touch-icon" href="assets/favicons/apple-touch-icon.png">
-<link rel="stylesheet" href="assets/style.css?v=1.1">
-<link rel="canonical" href="https://sscc-cockpit.cz/">
-<meta property="og:title" content="SSCC — SolarSpace Carbon Cycle">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://sscc-cockpit.cz/">
-<meta property="og:image" content="https://sscc-cockpit.cz/assets/img/logo-sscc.svg">
-<meta name="theme-color" content="#0c1219">
-
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Nápady | SSCC — SolarSpace Carbon Cycle</title>
+  <meta name="description" content="Nápadník a backlog — co chceme ověřit či postavit dál.">
+  <link rel="preload" href="assets/style.css?v=1" as="style">
+  <link rel="stylesheet" href="assets/style.css?v=1">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
 </head>
 <body>
- <header class="site-header">
-  <div class="container header-inner">
-    <a class="brand" href="index.html" aria-label="SSCC – domů">
-      <img src="assets/img/logo-sscc.svg" alt="SSCC logo" />
-      <span>SSCC</span>
-    </a>
-    <nav class="main-nav" aria-label="Hlavní navigace">
-      <a href="projekty.html">Projekty</a>
-      <a href="edukace.html">Edukace</a>
-      <a href="konsorcium.html">Konsorcium</a>
-      <a href="spoluprace.html">Spolupráce</a>
-    </nav>
-  </div>
-</header>
+  <header class="site-header">
+    <div class="brand">
+      <img src="assets/sscc-logo.jpg" alt="SSCC logo" class="logo" />
+      <h1 class="title">SolarSpace Carbon Cycle</h1>
+    </div>
+  </header>
 
+  <nav class="nav">
+      <a href="index.html" class="">Domů</a>
+      <a href="edukace.html" class="">Edukace</a>
+      <a href="projekty.html" class="">Projekty</a>
+      <a href="napady.html" class="active">Nápady</a>
+      <a href="konsorcium.html" class="">Konsorcium</a>
+      <a href="spoluprace.html" class="">Spolupráce</a>
+  </nav>
 
   <main class="container">
-    <section class="hero">
-      <div>
-        <h1>Nápady</h1>
-        <p class="lead">SSCC je otevřená platforma — krok za krokem stavíme funkční řešení, nápady a piloty s jasnou ekonomikou.</p>
-      </div>
-      <div class="card hidden" id="hero-img" aria-hidden="true">
-        <!-- prostor pro pozdější hero image -->
-      </div>
-    </section>
-
-    
-<section class="card">
-  <h2>Geoterma ze sopek – přenos &amp; ETS2 fit</h2>
-  <p>Koncept: využití vulkanických zón pro stabilní geotermální výrobu a přenos (HVDC / HTHP). Níže pracovní tabulka parametrů a ztrát.</p>
-  <table>
-    <tr><th>Segment</th><th>Parametr</th><th>Pozn.</th></tr>
-    <tr><td>Zdroj</td><td>150–250&nbsp;MW_th</td><td>hlubinné vrty v zóně s vysokým gradientem</td></tr>
-    <tr><td>Přenos</td><td>HVDC 500&nbsp;kV</td><td>cca 3% ztráty / 1000&nbsp;km</td></tr>
-    <tr><td>ETS2</td><td>0 povolenek</td><td>obnovitelný zdroj → mimo ETS</td></tr>
-  </table>
-  <p class="muted">Pozn.: interaktivní simulátor dodáme později (Python → JS).</p>
-</section>
-
-<section class="cta">
-  <h3>Máte data k lokalitám / přenosům?</h3>
-  <p>Ozvěte se: <a href="mailto:martin.klic46@gmail.com">martin.klic46@gmail.com</a>. Rádi přidáme vaše vstupy i spoluautorství.</p>
-</section>
-
+    <h2>Nápady</h2>
+    <p>Nápadník a backlog — co chceme ověřit či postavit dál.</p>
   </main>
 
- <footer class="site-footer">
-  <div class="container footer-inner">
-    <p>© 2025 SSCC — SolarSpace Carbon Cycle</p>
-    <p class="muted"><a href="sitemap.html">Sitemap</a> · <a href="robots.txt">robots.txt</a> · <a href="404.html">404</a></p>
-  </div>
-</footer>
+  <footer class="site-footer">
+    <small>© <span id="year"></span> SSCC — SolarSpace Carbon Cycle</small>
+  </footer>
 
-  <script src="assets/js/main.js"></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>

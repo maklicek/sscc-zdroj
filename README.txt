@@ -1,17 +1,40 @@
-SSCC – rychlý balíček k nasazení
+SSCC — SolarSpace Carbon Cycle
 ====================================
-Struktura:
-  index.html
-  /assets/style.css
-  /assets/sscc-logo.jpg
 
-Jak použít vlastní logo (doporučeno):
-1) Stáhni své logo z GitHubu: 
-   https://raw.githubusercontent.com/maklicek/sscc-zdroj/refs/heads/main/assets/sscc-logo.jpg
-2) Ulož jako 'sscc-logo.jpg'
-3) Přepiš tímto souborem náš placeholder v: assets/sscc-logo.jpg
-4) Nasazení (libovolně): Netlify (Upload a deploy), Vercel, GitHub Pages, nebo jako statický obsah na tvém hostingu.
+Tato sada obsahuje sjednocenou strukturu webu SSCC.
+Všechny stránky (index + podstránky) používají společnou hlavičku, patičku
+a jednotný styl se světlejšími panely a zlatým textem.
 
-Poznámka:
-- Cesty jsou neměnné: 'assets/sscc-logo.jpg'
-- Design: tmavě-zelený gradient, zlatý text, font Inter, responzivní layout.
+---------------------------------
+📁 Struktura složek a souborů
+---------------------------------
+sscc-site-unified/
+ ├─ index.html
+ ├─ edukace.html
+ ├─ projekty.html
+ ├─ napady.html
+ ├─ konsorcium.html
+ ├─ spoluprace.html
+ └─ assets/
+     ├─ style.css       ← společný CSS styl
+     └─ sscc-logo.jpg   ← logo (můžeš přepsat svým)
+
+---------------------------------
+📘 Jak nahrávat na GitHub
+---------------------------------
+1. Na GitHubu otevři svůj repozitář (např. sscc-web).
+2. Klikni na „Add file → Upload files“.
+3. Nahraj nejprve HTML soubory do kořene repozitáře.
+4. Vytvoř složku „assets“ a do ní nahraj style.css a sscc-logo.jpg.
+5. Commitni změny.
+
+Cesty jsou již správně nastavené:
+<link rel="stylesheet" href="assets/style.css?v=3">
+
+---------------------------------
+🌞 Poznámky
+---------------------------------
+• Slunce v pravém horním rohu je čistě vizuální CSS efekt (radial-gradient).
+• Nejsou zde jazykové přepínače (CZ/EN byly odstraněny).
+• Styl je plně responzivní a nezávislý na externím hostingu (Netlify apod.).
+• Kdykoliv můžeš upravit barvy, písmo nebo gradient přímo v style.css.

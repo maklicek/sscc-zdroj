@@ -6,34 +6,42 @@
   <title>Projekty | SSCC — SolarSpace Carbon Cycle</title>
   <meta name="description" content="Přehled pilotů a otevřených iniciativ SSCC.">
   <link rel="preload" href="assets/style.css?v=3" as="style">
-  <link rel="stylesheet" href="assets/style.css?v=3">
+<link rel="stylesheet" href="assets/style.css?v=4">
+
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header class="site-header">
-    <div class="header-row">
-      <div class="brand">
-        <img src="assets/sscc-logo.jpg" alt="SSCC logo" class="logo" />
-        <h1 class="title">SolarSpace Carbon Cycle</h1>
-      </div>
-      <nav class="nav">
-          <a href="index.html" class="">SSCC</a>
-          <a href="projekty.html" class="active">Projekty</a>
-          <a href="spoluprace.html" class="">Spolupráce</a>
-          <a href="edukace.html" class="">Edukace</a>
-          <a href="konsorcium.html" class="">Konsorcium</a>
-      </nav>
+<!-- ======= HEADER (sjednoceno, bez EN) ======= -->
+<header class="site-header">
+  <div class="header-row">
+    <div class="brand">
+      <img src="assets/sscc-logo.jpg" alt="SSCC logo" class="logo">
+      <h1 class="title">SolarSpace Carbon Cycle</h1>
     </div>
-  </header>
+    <nav class="nav">
+      <a href="index.html">SSCC</a>
+      <a href="projekty.html">Projekty</a>
+      <a href="spoluprace.html">Spolupráce</a>
+      <a href="edukace.html">Edukace</a>
+      <a href="konsorcium.html">Konsorcium</a>
+    </nav>
+  </div>
+</header>
+<!-- ======= /HEADER ======= -->
+
 
   <main class="container">
     <h2>Projekty</h2>
     <p>Přehled pilotů a otevřených iniciativ SSCC.</p>
   </main>
 
-  <footer class="site-footer">
-    <small>© <span id="year"></span> SSCC — SolarSpace Carbon Cycle</small>
-  </footer>
+<!-- ======= FOOTER (sjednoceno) ======= -->
+<footer class="site-footer">
+  <small>© <span id="year"></span> SSCC — SolarSpace Carbon Cycle</small>
+</footer>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+<!-- ======= /FOOTER ======= -->
+
 
   <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>

@@ -1,9 +1,0 @@
-[build]
-  command = ""
-  publish = "."
-
-[context.deploy-preview]
-  command = ""
-
-[context.branch-deploy]
-  command = ""

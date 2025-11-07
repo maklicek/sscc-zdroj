@@ -282,6 +282,87 @@ body{
   -webkit-backdrop-filter: blur(3px);
 }
 
+/* --- STAGING badge (jen v sscc-preview) --- */
+body::before{
+  content:"STAGING / PREVIEW";
+  position: fixed; z-index: 9999;
+  top: 12px; right: 12px;
+  font: 600 12px/1.1 Inter, system-ui, sans-serif;
+  letter-spacing: .06em;
+  color:#fff;
+  background:#d97706;
+  padding:6px 10px;
+  border-radius:10px;
+  box-shadow:0 8px 18px rgba(0,0,0,.3), inset 0 1px rgba(255,255,255,.25);
+  opacity:.92; pointer-events:none;
+}
+
+/* --- Tmavší pozadí webu --- */
+body{
+  background: linear-gradient(180deg, #0b1913 0%, #0c1f16 55%, #0a1b13 100%);
+  color:#eef3ed;
+}
+
+/* --- Hlavička světlejší, měkčí --- */
+.site-header{
+  position:relative;
+  background:rgba(255,255,255,.06);
+  border-bottom:1px solid rgba(255,255,255,.08);
+  box-shadow:0 8px 28px rgba(0,0,0,.28);
+  backdrop-filter:saturate(130%) blur(6px);
+  -webkit-backdrop-filter:saturate(130%) blur(6px);
+  overflow:hidden;
+}
+
+/* --- Slunce vlevo v hlavičce (měkké) --- */
+.site-header::after{
+  content:"";
+  position:absolute; inset:0; pointer-events:none;
+  background:
+    radial-gradient(360px 260px at 8% 12%,
+      rgba(255,225,140,.26) 0%,
+      rgba(255,200,90,.10) 38%,
+      rgba(255,180,60,.05) 60%,
+      rgba(0,0,0,0) 82%),
+    url("assets/hero-sun.jpg") no-repeat 3% 6%/520px auto;
+  mix-blend-mode: screen;
+  filter: saturate(110%) blur(.6px);
+  opacity: .55;
+}
+
+/* --- Karty projektů jemně, bez ostrých hran --- */
+.project{
+  position: relative;
+  background: linear-gradient(180deg, rgba(255,255,255,.07), rgba(255,255,255,.025));
+  border: 1px solid rgba(255,255,255,.10);
+  box-shadow: 0 22px 48px rgba(0,0,0,.32), inset 0 1px 0 rgba(255,255,255,.05);
+  border-radius: 12px;
+}
+.project figure{ border:1px solid rgba(255,255,255,.10); border-radius:10px; overflow:hidden; }
+
+/* --- Patička zřetelná --- */
+.site-footer{
+  border-top:1px solid rgba(255,255,255,.08);
+  background: rgba(255,255,255,.03);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+}
+
+/* --- WIP režim pro nedokončené projekty (jen v preview) --- */
+.project.wip{
+  opacity:.55;
+  filter: grayscale(.25);
+  pointer-events: none;   /* zneplatní kliky uvnitř */
+}
+.project.wip::after{
+  content:"Ve vývoji";
+  position:absolute; top:12px; right:12px;
+  font:600 11px/1 Inter, system-ui, sans-serif;
+  color:#1a1a1a;
+  background:#ffd166;
+  padding:6px 10px; border-radius:999px;
+  box-shadow:0 6px 14px rgba(0,0,0,.25);
+}
 
 /* STAGING badge – dáme pouze do sscc-preview */
 body::before{

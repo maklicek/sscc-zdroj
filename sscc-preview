@@ -26,3 +26,4 @@ git push origin main
   document.body.appendChild(info);
   setTimeout(function(){ info.remove(); }, 5200);
 })();
+<script src="assets/js/staging.js" defer></script>

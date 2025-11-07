@@ -45,6 +45,11 @@
 
   <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
   <script src="assets/redirect-www.js"></script>
+<script>
+  if (location.hostname === 'www.sscc-cockpit.cz') {
+    location.href = location.href.replace('www.sscc-cockpit.cz', 'sscc-cockpit.cz');
+  }
+</script>
 
 </body>
 </html>

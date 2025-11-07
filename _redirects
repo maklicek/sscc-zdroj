@@ -1,6 +1,0 @@
-# Primární přesměrování HTTP → HTTPS
-http://* sscc-cockpit.cz https://sscc-cockpit.cz:443 301!
-https://www.sscc-cockpit.cz/* https://sscc-cockpit.cz/:splat 301!
-
-# Vlastní 404 stránka
-/*    /404.html   404

@@ -4,13 +4,169 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Projekty | SSCC — SolarSpace Carbon Cycle</title>
-  <meta name="description" content="Přehled pilotních projektů a otevřených iniciativ SSCC.">
+  <meta name="description" content="Přehled pilotů a otevřených iniciativ SSCC.">
   <link rel="preload" href="assets/style.css?v=3" as="style">
   <link rel="stylesheet" href="assets/style-v4.css">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+
+  <!-- Minimalní doplňkové styly pro tuto stránku -->
+  <style>
+    /* --- Sekce: pozadí se „sluncem“ bez ostrých hran --- */
+    main.sun-left, main.sun-right{
+      position: relative;
+      overflow: hidden;
+      min-height: calc(100vh - 120px); /* pomůže, aby byla vidět patička */
+    }
+    main.sun-left::before,
+    main.sun-right::before{
+      content:"";
+      position:absolute; inset:-20% -10% auto -10%;
+      height:70vh; width:80vw;
+      pointer-events:none;
+      /* měkké „slunce“ bez ostré hrany – čistě CSS radial-gradient  */
+      background:
+        radial-gradient( circle at 30% 20%,
+          rgba(255,219,120,0.50) 0%,
+          rgba(255,190,80,0.18) 30%,
+          rgba(255,175,60,0.08) 55%,
+          rgba(255,165,40,0.04) 70%,
+          rgba(0,0,0,0) 85% );
+      filter: blur(4px);
+    }
+    /* varianta z prava – jen přehodíme kotevní bod */
+    main.sun-right::before{
+      inset:-20% -10% auto auto;
+      background:
+        radial-gradient( circle at 70% 20%,
+          rgba(255,219,120,0.50) 0%,
+          rgba(255,190,80,0.18) 30%,
+          rgba(255,175,60,0.08) 55%,
+          rgba(255,165,40,0.04) 70%,
+          rgba(0,0,0,0) 85% );
+    }
+
+    /* --- Obecné rozložení --- */
+    .page {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: clamp(16px, 2.4vw, 28px);
+    }
+
+    .page h2{
+      margin: 0 0 16px 0;
+    }
+    .page p.lead{
+      margin-top: 0;
+      margin-bottom: 28px;
+      opacity: .9;
+    }
+
+    /* --- Přehled pilotů (aktuálně jeden odkaz) --- */
+    .pilot-links{
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-bottom: 28px;
+    }
+    .pilot-links a{
+      display:inline-flex; align-items:center; gap:.6em;
+      padding: 10px 14px;
+      border-radius: 14px;
+      font-weight: 600;
+      text-decoration:none;
+      border: 1px solid rgba(255,255,255,.08);
+      background:
+        linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.02));
+      box-shadow:
+        0 6px 16px rgba(0,0,0,.20),
+        inset 0 1px 0 rgba(255,255,255,.05);
+      transition: transform .2s ease, box-shadow .25s ease, border-color .25s ease;
+    }
+    .pilot-links a:hover{
+      transform: translateY(-1px);
+      border-color: rgba(255,255,255,.18);
+      box-shadow:
+        0 10px 24px rgba(0,0,0,.28),
+        inset 0 1px 0 rgba(255,255,255,.06);
+    }
+
+    /* --- Projektová karta (jemné přechody, žádné ostré hrany) --- */
+    .project{
+      display:grid;
+      grid-template-columns: 1.1fr 1.2fr;
+      gap: clamp(16px,3vw,28px);
+      padding: clamp(18px,2.8vw,26px);
+      border-radius: 18px;
+      border: 1px solid rgba(255,255,255,.08);
+      background:
+        linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.02));
+      box-shadow:
+        0 18px 44px rgba(0,0,0,.28),
+        inset 0 1px 0 rgba(255,255,255,.05);
+    }
+    @media (max-width: 920px){
+      .project{ grid-template-columns: 1fr; }
+    }
+
+    .project figure{
+      margin:0; overflow:hidden; border-radius: 14px;
+      border: 1px solid rgba(255,255,255,.08);
+      background: rgba(255,255,255,.02);
+      box-shadow: inset 0 1px 0 rgba(255,255,255,.03);
+    }
+    .project figure img{
+      display:block; width:100%; height:auto;
+      transform: scale(1.02);
+      transition: transform .35s ease;
+    }
+    .project figure:hover img{
+      transform: scale(1.06);
+    }
+
+    .project h3{
+      margin: 0 0 .5rem 0;
+      font-size: clamp(1.4rem, 2.6vw, 2rem);
+    }
+    .project .meta{
+      display:flex; flex-wrap:wrap; gap:.6rem 1rem;
+      font-size: .95rem; opacity: .88;
+      margin: .4rem 0 1rem 0;
+    }
+    .project .meta .badge{
+      padding:.25rem .6rem; border-radius:999px;
+      border:1px solid rgba(255,255,255,.10);
+      background: linear-gradient(180deg, rgba(255,255,255,.08), rgba(255,255,255,.02));
+    }
+
+    .project .text{
+      line-height: 1.55;
+      opacity: .95;
+    }
+
+    .project .cta{
+      margin-top: 1rem;
+      display:flex; gap:.6rem; flex-wrap:wrap;
+    }
+    .btn{
+      display:inline-flex; align-items:center; gap:.6em;
+      padding:.7rem 1rem; border-radius: 12px; font-weight: 600;
+      text-decoration:none; border:1px solid rgba(255,255,255,.10);
+      background: linear-gradient(180deg, rgba(255,255,255,.10), rgba(255,255,255,.04));
+      box-shadow: 0 10px 22px rgba(0,0,0,.22), inset 0 1px 0 rgba(255,255,255,.05);
+      transition: transform .2s ease, box-shadow .25s ease, border-color .25s ease;
+    }
+    .btn:hover{
+      transform: translateY(-1px);
+      border-color: rgba(255,255,255,.20);
+      box-shadow: 0 16px 30px rgba(0,0,0,.30), inset 0 1px 0 rgba(255,255,255,.06);
+    }
+
+    /* Rezerva pod obsahem, aby patička nikdy nepřilehla */
+    .page{ padding-bottom: 48px; }
+  </style>
 </head>
+
 <body>
-  <!-- ======= HEADER ======= -->
+  <!-- ======= HEADER (sjednoceno) ======= -->
   <header class="site-header">
     <div class="header-row">
       <div class="brand">
@@ -28,29 +184,52 @@
   </header>
   <!-- ======= /HEADER ======= -->
 
-  <main class="container">
-    <h2>Projekty</h2>
-    <p>Přehled pilotů a otevřených iniciativ SSCC.</p>
+  <main class="sun-left">
+    <section class="page">
+      <h2>Projekty</h2>
+      <p class="lead">Přehled pilotů a otevřených iniciativ SSCC.</p>
 
-    <section class="project-grid">
+      <!-- Přehled pilotů (teď je jen jeden) -->
+      <div class="pilot-links">
+        <a href="#orbit-solar">☀️ Orbitální solární farma → přenos energie</a>
+      </div>
 
-      <!-- 1️⃣ Green Ammonia -->
-      <article class="project-card">
-        <div class="project-media">
-          <img src="assets/pilotni-jednotka.jpg" alt="Pilotní jednotka zeleného amoniaku (NH₃)" loading="lazy">
-        </div>
-        <div class="project-body">
-          <h3>Green Ammonia (NH₃)</h3>
-          <p>
-            Pilot decentralizované syntézy zeleného amoniaku s návazností na
-            zachytávání a využití CO₂. Cíl: škálovatelná jednotka pro průmyslové
-            provozy a stavebnictví, provoz na obnovitelnou/sdílenou energii.
+      <!-- JEDEN projekt (ostatní doplníme po schválení) -->
+      <article id="orbit-solar" class="project">
+        <figure>
+          <!-- používáme existující obrázek v /assets -->
+          <img src="assets/cyclus-sscc.jpg" alt="Koncept přenosu energie z orbitální solární farmy">
+        </figure>
+
+        <div>
+          <h3>Orbitální solární farma → přenos energie</h3>
+          <div class="meta">
+            <span class="badge">Studie bezpečnosti</span>
+            <span class="badge">Účinnost &amp; ekonomika</span>
+            <span class="badge">Mikrovlnný příjem</span>
+          </div>
+
+          <p class="text">
+            Pilotní studie přenosu energie z orbitální solární farmy a bezpečný příjem v pozemní stanici.
+            Zaměřujeme se na **účinnost**, **regulační rámec** a **nutná bezpečnostní opatření**
+            spojená s mikrovlnným (případně laserovým) paprskem.
           </p>
-          <ul class="project-meta">
-            <li><strong>TRL:</strong> 4–5 (pilotní validace)</li>
-            <li><strong>Horizont:</strong> 24 měsíců</li>
-            <li><strong>Klíčové oblasti:</strong> elektrolýza, Haber–Bosch light, bezpečnost</li>
-          </ul>
-          <div class="project-actions">
-            <a href="pdf/Obecny_popis_projektu.pdf" class="btn" target="_blank">Abstrakt / PDF</a>
-            <a href="spoluprace.html#vyzkum" class="btn bt
+
+          <div class="cta">
+            <a class="btn" href="spoluprace.html">Zapojit se</a>
+            <a class="btn" href="konsorcium.html">Konsorcium &amp; role</a>
+          </div>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <!-- ======= FOOTER (sjednoceno) ======= -->
+  <footer class="site-footer">
+    <small>© <span id="year"></span> SSCC — SolarSpace Carbon Cycle</small>
+  </footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  <!-- ======= /FOOTER ======= -->
+
+</body>
+</html>

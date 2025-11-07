@@ -233,3 +233,20 @@ body{
 }
 .cta-card h4{ margin:0 0 6px 0; font-size:1.2rem; }
 .cta-card p{ margin:0 0 14px 0; opacity:.95; }
+
+
+/* STAGING badge – dáme pouze do sscc-preview */
+body::before{
+  content: "STAGING / PREVIEW";
+  position: fixed; z-index: 9999;
+  top: 12px; right: 12px;
+  font: 600 12px/1.1 Inter, system-ui, sans-serif;
+  letter-spacing: .06em;
+  color: #fff;
+  background: #d97706; /* jantar */
+  padding: 6px 10px;
+  border-radius: 10px;
+  box-shadow: 0 8px 18px rgba(0,0,0,.3), inset 0 1px rgba(255,255,255,.25);
+  opacity: .92;
+  pointer-events: none;
+}

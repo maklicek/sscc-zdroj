@@ -233,6 +233,54 @@ body{
 }
 .cta-card h4{ margin:0 0 6px 0; font-size:1.2rem; }
 .cta-card p{ margin:0 0 14px 0; opacity:.95; }
+/* Tmavé pozadí bez ostrých přechodů */
+body{
+  background: linear-gradient(180deg, #0b1913 0%, #0c1f16 55%, #0a1b13 100%);
+  color:#eef3ed;
+}
+
+/* Hlavička – světlejší, poloprůhledná, měkká */
+.site-header{
+  position: relative;
+  background: rgba(255,255,255,.06);
+  border-bottom: 1px solid rgba(255,255,255,.08);
+  box-shadow: 0 8px 28px rgba(0,0,0,.28);
+  backdrop-filter: saturate(130%) blur(6px);
+  -webkit-backdrop-filter: saturate(130%) blur(6px);
+  overflow: hidden;
+}
+
+/* Jemné "slunce" vlevo – hero-sun.jpg + měkký přechod */
+.site-header::after{
+  content:"";
+  position:absolute; inset:0; pointer-events:none;
+  background:
+    radial-gradient(360px 260px at 8% 12%,
+      rgba(255,225,140,.26) 0%,
+      rgba(255,200,90,.10) 38%,
+      rgba(255,180,60,.05) 60%,
+      rgba(0,0,0,0) 82%),
+    url("assets/hero-sun.jpg") no-repeat 3% 6%/520px auto;
+  mix-blend-mode: screen;
+  filter: saturate(110%) blur(.6px);
+  opacity:.55;          /* případně zjemnit/zvýraznit */
+}
+
+/* Projektové karty – měkčí ohraničení */
+.project{
+  background: linear-gradient(180deg, rgba(255,255,255,.07), rgba(255,255,255,.025));
+  border: 1px solid rgba(255,255,255,.10);
+  box-shadow: 0 22px 48px rgba(0,0,0,.32), inset 0 1px 0 rgba(255,255,255,.05);
+}
+.project figure{ border:1px solid rgba(255,255,255,.10); }
+
+/* Patička vždy viditelná */
+.site-footer{
+  border-top:1px solid rgba(255,255,255,.08);
+  background: rgba(255,255,255,.03);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+}
 
 
 /* STAGING badge – dáme pouze do sscc-preview */

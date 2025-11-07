@@ -1,1 +1,6 @@
+git remote add upstream https://github.com/maklicek/sscc-zdroj.git
+git fetch upstream
+git checkout main
+git merge upstream/main
+git push origin main
 

@@ -146,6 +146,82 @@ code{
 @media (max-width: 980px){
   .project-card { grid-template-columns: 1fr; }
 }
+/* --- Globální tmavý podklad --- */
+body{
+  background: radial-gradient(1200px 800px at 50% 10%,
+              rgba(8,25,18,.06) 0%, rgba(8,25,18,0) 60%),
+              linear-gradient(180deg, #0b1913 0%, #0c1f16 55%, #0a1b13 100%);
+  color: #eef3ed;
+}
+
+/* --- Hlavička: světlejší, s jemným sklem a slabým spodním okrajem --- */
+.site-header{
+  position: relative;
+  background: rgba(255,255,255,.06);
+  border-bottom: 1px solid rgba(255,255,255,.08);
+  box-shadow: 0 8px 28px rgba(0,0,0,.28);
+  backdrop-filter: saturate(130%) blur(6px);
+  -webkit-backdrop-filter: saturate(130%) blur(6px);
+  overflow: hidden;
+}
+
+/* „Slunce“ vpravo nahoře v hlavičce (jemné, bez ostré hrany) */
+.site-header::after{
+  content:"";
+  position:absolute; inset:0;
+  pointer-events:none;
+  background:
+    radial-gradient(circle at 92% 8%,
+      rgba(255,225,140,.35) 0%,
+      rgba(255,200,90,.14) 28%,
+      rgba(255,180,60,.07) 46%,
+      rgba(0,0,0,0) 70%);
+  filter: blur(2px);
+}
+
+/* Logo větší + badge SSCC vedle názvu */
+.brand .logo{
+  width: 64px; height:auto; display:block;
+}
+.brand .title{
+  display:flex; align-items:center; gap:.6rem;
+  font-size: clamp(1.05rem,2.2vw,1.25rem);
+  margin:0;
+}
+.brand .title .abbr{
+  font-size: .86em;
+  font-weight: 800;
+  letter-spacing: .04em;
+  padding: .25rem .55rem;
+  border-radius: 999px;
+  color: #1a261f;
+  background: linear-gradient(180deg,#ffe48c,#ffc65f);
+  box-shadow: 0 6px 14px rgba(0,0,0,.25);
+}
+
+/* --- Zjemníme kartu projektu i odkaz nahoře, ať nepůsobí tvrdě --- */
+.pilot-links a{
+  background: linear-gradient(180deg, rgba(255,255,255,.08), rgba(255,255,255,.03));
+}
+
+.project{
+  background: linear-gradient(180deg, rgba(255,255,255,.07), rgba(255,255,255,.025));
+  border: 1px solid rgba(255,255,255,.10);
+  box-shadow:
+    0 22px 48px rgba(0,0,0,.32),
+    inset 0 1px 0 rgba(255,255,255,.05);
+}
+.project figure{
+  border:1px solid rgba(255,255,255,.10);
+}
+
+/* Patička vždy viditelná, kontrastní */
+.site-footer{
+  border-top: 1px solid rgba(255,255,255,.08);
+  background: rgba(255,255,255,.03);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+}
 
 /* CTA spodní blok */
 .project-cta { margin: 30px 0 6px; }
